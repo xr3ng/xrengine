@@ -18,6 +18,13 @@ Expand the name of the chart.
 {{- default .Chart.Name .Values.spoke.nameOverride | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
+{{- define "xrchat.gsg.name" -}}
+{{- default .Chart.Name .Values.gsg.nameOverride | trunc 63 | trimSuffix "-" -}}
+{{- end -}}
+
+{{- define "xrchat.gs.name" -}}
+{{- default .Chart.Name .Values.gs.nameOverride | trunc 63 | trimSuffix "-" -}}
+{{- end -}}
 
 {{/*
 Create a default fully qualified app name.
@@ -60,6 +67,24 @@ If release name contains chart name it will be used as a full name.
 {{- .Values.spoke.fullnameOverride | trunc 63 | trimSuffix "-" -}}
 {{- else -}}
 {{- printf "%s-%s" .Release.Name .Values.spoke.name | trunc 63 | trimSuffix "-" -}}
+{{- end -}}
+{{- end -}}
+
+
+{{- define "xrchat.gs.fullname" -}}
+{{- if .Values.gs.fullnameOverride -}}
+{{- .Values.gs.fullnameOverride | trunc 63 | trimSuffix "-" -}}
+{{- else -}}
+{{- printf "%s-%s" .Release.Name .Values.gs.name | trunc 63 | trimSuffix "-" -}}
+{{- end -}}
+{{- end -}}
+
+
+{{- define "xrchat.gsg.fullname" -}}
+{{- if .Values.gsg.fullnameOverride -}}
+{{- .Values.gsg.fullnameOverride | trunc 63 | trimSuffix "-" -}}
+{{- else -}}
+{{- printf "%s-%s" .Release.Name .Values.gsg.name | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 {{- end -}}
 
@@ -149,6 +174,49 @@ app.kubernetes.io/component: spoke
 
 
 {{/*
+Common labels
+*/}}
+{{- define "xrchat.gs.labels" -}}
+helm.sh/chart: {{ include "xrchat.chart" . }}
+{{ include "xrchat.gs.selectorLabels" . }}
+{{- if .Chart.AppVersion }}
+app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
+{{- end }}
+app.kubernetes.io/managed-by: {{ .Release.Service }}
+{{- end -}}
+
+{{/*
+Selector labels
+*/}}
+{{- define "xrchat.gs.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "xrchat.gs.name" . }}
+app.kubernetes.io/instance: {{ .Release.Name }}
+app.kubernetes.io/component: gs
+{{- end -}}
+
+
+{{/*
+Common labels
+*/}}
+{{- define "xrchat.gsg.labels" -}}
+helm.sh/chart: {{ include "xrchat.chart" . }}
+{{ include "xrchat.gsg.selectorLabels" . }}
+{{- if .Chart.AppVersion }}
+app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
+{{- end }}
+app.kubernetes.io/managed-by: {{ .Release.Service }}
+{{- end -}}
+
+{{/*
+Selector labels
+*/}}
+{{- define "xrchat.gsg.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "xrchat.gsg.name" . }}
+app.kubernetes.io/instance: {{ .Release.Name }}
+app.kubernetes.io/component: gsg
+{{- end -}}
+
+{{/*
 Create the name of the service account to use
 */}}
 {{- define "xrchat.client.serviceAccountName" -}}
@@ -183,6 +251,27 @@ Create the name of the service account to use
 {{- end -}}
 {{- end -}}
 
+{{/*
+Create the name of the service account to use
+*/}}
+{{- define "xrchat.gs.serviceAccountName" -}}
+{{- if .Values.gs.serviceAccount.create -}}
+    {{ default (include "xrchat.gs.fullname" .) .Values.gs.serviceAccount.name }}
+{{- else -}}
+    {{ default "default" .Values.gs.serviceAccount.name }}
+{{- end -}}
+{{- end -}}
+
+{{/*
+Create the name of the service account to use
+*/}}
+{{- define "xrchat.gsg.serviceAccountName" -}}
+{{- if .Values.gs.serviceAccount.create -}}
+    {{ default (include "xrchat.gsg.fullname" .) .Values.gsg.serviceAccount.name }}
+{{- else -}}
+    {{ default "default" .Values.gsg.serviceAccount.name }}
+{{- end -}}
+{{- end -}}
 
 {{/*
 Create a default fully qualified app name.
