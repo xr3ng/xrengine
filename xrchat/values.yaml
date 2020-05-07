@@ -193,6 +193,50 @@ spoke:
   securityContext: {}
   
 
+gsg:
+  enabled: false
+  name: gs-go
+
+  replicaCount: 1
+  image:
+    repository: xrchat/gameserver-go
+    tag: latest
+    pullPolicy: Always
+  
+  imagePullSecrets: []
+  nameOverride: ""
+  fullnameOverride: ""
+
+  resources: {}
+  nodeSelector: {}
+  tolerations: []
+  affinity: {}
+  podSecurityContext: {}
+  securityContext: {}
+
+
+gs:
+  enabled: false
+  name: gs
+
+  replicaCount: 1
+  image:
+    repository: xrchat/gameserver
+    tag: latest
+    pullPolicy: Always
+  
+  imagePullSecrets: []
+  nameOverride: ""
+  fullnameOverride: ""
+
+  resources: {}
+  nodeSelector: {}
+  tolerations: []
+  affinity: {}
+  podSecurityContext: {}
+  securityContext: {}
+
+
 
 ########### Subcharts - values here will overwrite the subchart
 
