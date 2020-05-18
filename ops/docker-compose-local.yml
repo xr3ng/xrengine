@@ -13,7 +13,7 @@ services:
   server:
     build: 
       context: ../xrengine
-    image: xrengine/server
+    image: xrengine/xrengine
     restart: always
     environment:
       PORT: 3030
@@ -21,21 +21,9 @@ services:
       MYSQL_URL: mysql://server:password@db:3306/xrengine 
     ports:
       - '3030:3030'
+      - '3000:3000'
     depends_on: 
       - db
-  
-  client:
-    build: 
-      context: ../xrengine-client
-    image: xrengine/client
-    environment:
-        API_SERVER: https://api.kaixr.world
-        SITE_TITLE: KaiXR
-        SITE_DESC: Connected Worlds for Everyone
-        NODE_ENV: kai
-    restart: always
-    ports:
-      - '3000:3000'
   
   spoke:
     build:

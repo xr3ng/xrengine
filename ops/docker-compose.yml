@@ -9,7 +9,7 @@ services:
       - '8081:8081'
 
   server:
-    image: xrengine/server
+    image: xrengine/xrengine
     restart: always
     environment:
       PORT: 3030
@@ -17,15 +17,10 @@ services:
       MYSQL_URL: mysql://server:password@db:3306/xrengine 
     ports:
       - '3030:3030'
+      - '3000:3000'
     depends_on: 
       - db
-  
-  client:
-    image: xrengine/client
-    restart: always
-    ports:
-      - '3000:3000'
-  
+
   spoke:
     image: xrengine/spoke
     restart: always

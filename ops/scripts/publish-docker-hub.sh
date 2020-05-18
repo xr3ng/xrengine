@@ -24,8 +24,8 @@ for repo in {client,server,realtime-server}; do
 done 
 
 
-# docker tag xrengine/server xrengine/server:latest
-# docker push xrengine/server:latest 
+# docker tag xrengine/xrengine xrengine/xrengine:latest
+# docker push xrengine/xrengine:latest 
 
 # docker tag xrengine/realtime-server xrengine/realtime-server:latest
 # docker push xrengine/realtime-server:latest

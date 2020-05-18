@@ -95,7 +95,7 @@ Dependent charts can also have values overwritten. Preface values with mariadb.*
 | **server.extraEnv** | object | `{}` | [Additional Configuration](#xrengine-additional-configurations) for xrengine service |
 | server.fullnameOverride | string | `""` | override server fullname template |
 | server.image.pullPolicy | string | `"Always"` | Server pull policy |
-| server.image.repository | string | `"xrengine/server"` | server image repo |
+| server.image.repository | string | `"xrengine/xrengine"` | server image repo |
 | server.image.tag | string | `"latest"` | server image version |
 | server.imagePullSecrets | list | `[]` | server image pull secret |
 | server.ingress.annotations | object | `{"kubernetes.io/ingress.class": "nginx"}` | server ingress class |

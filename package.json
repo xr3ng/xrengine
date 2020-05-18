@@ -40,7 +40,7 @@
     "lint-with-client": "(npm run lint) & (cd client && npm run lint)",
     "start-with-client": "(npm run start) & (cd client && npm run start)",
     "test-with-client": "(npm run test) & (cd client && npm run test)",
-    "compile-docs": "(cd docs "
+    "docs": "(cd docs && hugo)"
   },
   "standard": {
     "env": [

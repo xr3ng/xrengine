@@ -62,7 +62,7 @@ server:
 
   replicaCount: 1
   image:
-    repository: xrengine/server
+    repository: xrengine/xrengine
     tag: latest
     pullPolicy: Always
 
