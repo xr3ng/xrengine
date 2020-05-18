@@ -10,7 +10,7 @@ import Container from '@material-ui/core/Container'
 import { connect } from 'react-redux'
 import { bindActionCreators, Dispatch } from 'redux'
 import { registerUserByEmail } from '../../../redux/auth/service'
-import SignIn from '../Auth/Login'
+import SignIn from './Login'
 import './style.scss'
 import { showDialog } from '../../../redux/dialog/service'
 

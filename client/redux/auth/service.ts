@@ -25,7 +25,7 @@ import { resolveUser } from '../../interfaces/User'
 import { resolveAuthUser } from '../../interfaces/AuthUser'
 import { IdentityProvider } from '../../interfaces/IdentityProvider'
 import getConfig from 'next/config'
-import { getStoredState } from '../../redux/persisted.store'
+import { getStoredState } from '../persisted.store'
 
 const { publicRuntimeConfig } = getConfig()
 const apiServer: string = publicRuntimeConfig.apiServer

@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../xrchat-server"
+		},
+		{
+			"path": "../xrchat-client"
+		},
+		{
+			"path": "../xrchat-realtime-server"
+		},
+		{
+			"path": "../Spoke"
+		},
+		{
+			"path": "../gameserver"
+		},
+		{
+			"path": "../gameserver-go"
+		}
+	],
+	"settings": {}
+}

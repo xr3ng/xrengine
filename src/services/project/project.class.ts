@@ -1,7 +1,7 @@
 import { Service, SequelizeServiceOptions } from 'feathers-sequelize'
 import { Application } from '../../declarations'
 import { Params, Id } from '@feathersjs/feathers'
-import { mapProjectDetailData, defaultProjectImport } from '../project/project-helper'
+import { mapProjectDetailData, defaultProjectImport } from './project-helper'
 
 export class Project extends Service {
   app: Application
