@@ -26,7 +26,7 @@
   },
   "bin": {
     "xrengine": "(npm run dev) & (cd client && npm run dev 3000)"
-  }
+  },
   "scripts": {
     "postinstall": "(cd client && yarn install) & (cd docs && npm install)",
     "compile": "shx rm -rf lib/ && tsc",
