@@ -1,5 +1,5 @@
 {
-  "name": "xrchat-server",
+  "name": "xrengine",
   "description": "Backend server for XRChat, built on Node + Feathers + Express + SQL",
   "version": "0.0.0",
   "homepage": "",

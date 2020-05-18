@@ -2,27 +2,27 @@
 {{/*
 Expand the name of the chart.
 */}}
-# {{- define "xrchat.name" -}}
+# {{- define "xrengine.name" -}}
 # {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" -}}
 # {{- end -}}
 
-{{- define "xrchat.client.name" -}}
+{{- define "xrengine.client.name" -}}
 {{- default .Chart.Name .Values.client.nameOverride | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
-{{- define "xrchat.server.name" -}}
+{{- define "xrengine.server.name" -}}
 {{- default .Chart.Name .Values.server.nameOverride | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
-{{- define "xrchat.spoke.name" -}}
+{{- define "xrengine.spoke.name" -}}
 {{- default .Chart.Name .Values.spoke.nameOverride | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
-{{- define "xrchat.gsg.name" -}}
+{{- define "xrengine.gsg.name" -}}
 {{- default .Chart.Name .Values.gsg.nameOverride | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
-{{- define "xrchat.gs.name" -}}
+{{- define "xrengine.gs.name" -}}
 {{- default .Chart.Name .Values.gs.nameOverride | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
@@ -31,7 +31,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "xrchat.fullname" -}}
+{{- define "xrengine.fullname" -}}
 {{- if .Values.fullnameOverride -}}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" -}}
 {{- else -}}
@@ -45,7 +45,7 @@ If release name contains chart name it will be used as a full name.
 {{- end -}}
 
 
-{{- define "xrchat.client.fullname" -}}
+{{- define "xrengine.client.fullname" -}}
 {{- if .Values.client.fullnameOverride -}}
 {{- .Values.client.fullnameOverride | trunc 63 | trimSuffix "-" -}}
 {{- else -}}
@@ -54,7 +54,7 @@ If release name contains chart name it will be used as a full name.
 {{- end -}}
 
 
-{{- define "xrchat.server.fullname" -}}
+{{- define "xrengine.server.fullname" -}}
 {{- if .Values.server.fullnameOverride -}}
 {{- .Values.server.fullnameOverride | trunc 63 | trimSuffix "-" -}}
 {{- else -}}
@@ -62,7 +62,7 @@ If release name contains chart name it will be used as a full name.
 {{- end -}}
 {{- end -}}
 
-{{- define "xrchat.spoke.fullname" -}}
+{{- define "xrengine.spoke.fullname" -}}
 {{- if .Values.spoke.fullnameOverride -}}
 {{- .Values.spoke.fullnameOverride | trunc 63 | trimSuffix "-" -}}
 {{- else -}}
@@ -71,7 +71,7 @@ If release name contains chart name it will be used as a full name.
 {{- end -}}
 
 
-{{- define "xrchat.gs.fullname" -}}
+{{- define "xrengine.gs.fullname" -}}
 {{- if .Values.gs.fullnameOverride -}}
 {{- .Values.gs.fullnameOverride | trunc 63 | trimSuffix "-" -}}
 {{- else -}}
@@ -80,7 +80,7 @@ If release name contains chart name it will be used as a full name.
 {{- end -}}
 
 
-{{- define "xrchat.gsg.fullname" -}}
+{{- define "xrengine.gsg.fullname" -}}
 {{- if .Values.gsg.fullnameOverride -}}
 {{- .Values.gsg.fullnameOverride | trunc 63 | trimSuffix "-" -}}
 {{- else -}}
@@ -88,12 +88,12 @@ If release name contains chart name it will be used as a full name.
 {{- end -}}
 {{- end -}}
 
-{{- define "xrchat.client.host" -}}
+{{- define "xrengine.client.host" -}}
 {{- printf "%s.%s.%s" "dashboard" .Release.Name .Values.domain -}}
 {{- end -}}
 
 
-{{- define "xrchat.server.host" -}}
+{{- define "xrengine.server.host" -}}
 {{- printf "%s.%s.%s" "api" .Release.Name .Values.domain -}}
 {{- end -}}
 
@@ -102,16 +102,16 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "xrchat.chart" -}}
+{{- define "xrengine.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
 {{/*
 Common labels
 */}}
-{{- define "xrchat.client.labels" -}}
-helm.sh/chart: {{ include "xrchat.chart" . }}
-{{ include "xrchat.client.selectorLabels" . }}
+{{- define "xrengine.client.labels" -}}
+helm.sh/chart: {{ include "xrengine.chart" . }}
+{{ include "xrengine.client.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -121,8 +121,8 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "xrchat.client.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "xrchat.client.name" . }}
+{{- define "xrengine.client.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "xrengine.client.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 app.kubernetes.io/component: client
 {{- end -}}
@@ -131,9 +131,9 @@ app.kubernetes.io/component: client
 {{/*
 Common labels
 */}}
-{{- define "xrchat.server.labels" -}}
-helm.sh/chart: {{ include "xrchat.chart" . }}
-{{ include "xrchat.server.selectorLabels" . }}
+{{- define "xrengine.server.labels" -}}
+helm.sh/chart: {{ include "xrengine.chart" . }}
+{{ include "xrengine.server.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -143,8 +143,8 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "xrchat.server.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "xrchat.server.name" . }}
+{{- define "xrengine.server.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "xrengine.server.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 app.kubernetes.io/component: server
 {{- end -}}
@@ -154,9 +154,9 @@ app.kubernetes.io/component: server
 {{/*
 Common labels
 */}}
-{{- define "xrchat.spoke.labels" -}}
-helm.sh/chart: {{ include "xrchat.chart" . }}
-{{ include "xrchat.spoke.selectorLabels" . }}
+{{- define "xrengine.spoke.labels" -}}
+helm.sh/chart: {{ include "xrengine.chart" . }}
+{{ include "xrengine.spoke.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -166,8 +166,8 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "xrchat.spoke.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "xrchat.spoke.name" . }}
+{{- define "xrengine.spoke.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "xrengine.spoke.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 app.kubernetes.io/component: spoke
 {{- end -}}
@@ -176,9 +176,9 @@ app.kubernetes.io/component: spoke
 {{/*
 Common labels
 */}}
-{{- define "xrchat.gs.labels" -}}
-helm.sh/chart: {{ include "xrchat.chart" . }}
-{{ include "xrchat.gs.selectorLabels" . }}
+{{- define "xrengine.gs.labels" -}}
+helm.sh/chart: {{ include "xrengine.chart" . }}
+{{ include "xrengine.gs.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -188,8 +188,8 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "xrchat.gs.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "xrchat.gs.name" . }}
+{{- define "xrengine.gs.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "xrengine.gs.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 app.kubernetes.io/component: gs
 {{- end -}}
@@ -198,9 +198,9 @@ app.kubernetes.io/component: gs
 {{/*
 Common labels
 */}}
-{{- define "xrchat.gsg.labels" -}}
-helm.sh/chart: {{ include "xrchat.chart" . }}
-{{ include "xrchat.gsg.selectorLabels" . }}
+{{- define "xrengine.gsg.labels" -}}
+helm.sh/chart: {{ include "xrengine.chart" . }}
+{{ include "xrengine.gsg.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -210,8 +210,8 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "xrchat.gsg.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "xrchat.gsg.name" . }}
+{{- define "xrengine.gsg.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "xrengine.gsg.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 app.kubernetes.io/component: gsg
 {{- end -}}
@@ -219,9 +219,9 @@ app.kubernetes.io/component: gsg
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "xrchat.client.serviceAccountName" -}}
+{{- define "xrengine.client.serviceAccountName" -}}
 {{- if .Values.client.serviceAccount.create -}}
-    {{ default (include "xrchat.client.fullname" .) .Values.client.serviceAccount.name }}
+    {{ default (include "xrengine.client.fullname" .) .Values.client.serviceAccount.name }}
 {{- else -}}
     {{ default "default" .Values.client.serviceAccount.name }}
 {{- end -}}
@@ -231,9 +231,9 @@ Create the name of the service account to use
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "xrchat.server.serviceAccountName" -}}
+{{- define "xrengine.server.serviceAccountName" -}}
 {{- if .Values.server.serviceAccount.create -}}
-    {{ default (include "xrchat.server.fullname" .) .Values.server.serviceAccount.name }}
+    {{ default (include "xrengine.server.fullname" .) .Values.server.serviceAccount.name }}
 {{- else -}}
     {{ default "default" .Values.server.serviceAccount.name }}
 {{- end -}}
@@ -243,9 +243,9 @@ Create the name of the service account to use
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "xrchat.spoke.serviceAccountName" -}}
+{{- define "xrengine.spoke.serviceAccountName" -}}
 {{- if .Values.spoke.serviceAccount.create -}}
-    {{ default (include "xrchat.spoke.fullname" .) .Values.spoke.serviceAccount.name }}
+    {{ default (include "xrengine.spoke.fullname" .) .Values.spoke.serviceAccount.name }}
 {{- else -}}
     {{ default "default" .Values.spoke.serviceAccount.name }}
 {{- end -}}
@@ -254,9 +254,9 @@ Create the name of the service account to use
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "xrchat.gs.serviceAccountName" -}}
+{{- define "xrengine.gs.serviceAccountName" -}}
 {{- if .Values.gs.serviceAccount.create -}}
-    {{ default (include "xrchat.gs.fullname" .) .Values.gs.serviceAccount.name }}
+    {{ default (include "xrengine.gs.fullname" .) .Values.gs.serviceAccount.name }}
 {{- else -}}
     {{ default "default" .Values.gs.serviceAccount.name }}
 {{- end -}}
@@ -265,9 +265,9 @@ Create the name of the service account to use
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "xrchat.gsg.serviceAccountName" -}}
+{{- define "xrengine.gsg.serviceAccountName" -}}
 {{- if .Values.gs.serviceAccount.create -}}
-    {{ default (include "xrchat.gsg.fullname" .) .Values.gsg.serviceAccount.name }}
+    {{ default (include "xrengine.gsg.fullname" .) .Values.gsg.serviceAccount.name }}
 {{- else -}}
     {{ default "default" .Values.gsg.serviceAccount.name }}
 {{- end -}}
@@ -277,7 +277,7 @@ Create the name of the service account to use
 Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 */}}
-{{- define "xrchat.mariadb.fullname" -}}
+{{- define "xrengine.mariadb.fullname" -}}
 {{- if .Values.mariadb.fullnameOverride -}}
 {{- .Values.mariadb.fullnameOverride | trunc 63 | trimSuffix "-" -}}
 {{- else -}}
@@ -290,9 +290,9 @@ We truncate at 63 chars because some Kubernetes name fields are limited to this 
 {{/*
 Set maria host
 */}}
-{{- define "xrchat.mariadb.host" -}}
+{{- define "xrengine.mariadb.host" -}}
 {{- if .Values.mariadb.enabled -}}
-{{- template "xrchat.mariadb.fullname" . -}}
+{{- template "xrengine.mariadb.fullname" . -}}
 {{- else -}}
 {{- .Values.mariadb.externalHost | quote -}}
 {{- end -}}

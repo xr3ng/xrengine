@@ -6,7 +6,7 @@
     "logo": "",
     "xr": {
       "networked-scene": {
-        "app": "xrchat",
+        "app": "xrengine",
         "room": "lobby",
         "audio": true,
         "adapter": "socketio",
@@ -94,7 +94,7 @@
     "siteTitle": "XRChat",
     "siteDescription": "Connected Worlds for Everyone",
     "featherStoreKey": "XRChat-Auth-Store",
-    "localStorageKey": "xrchat-client-store-key-v1",
+    "localStorageKey": "xrengine-client-store-key-v1",
     "auth": {
       "enableSmsMagicLink": true,
       "enableEmailMagicLink": true,

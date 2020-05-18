@@ -2,18 +2,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "xrchat.server.fullname" . }}
+  name: {{ include "xrengine.server.fullname" . }}
   labels:
-    {{- include "xrchat.server.labels" . | nindent 4 }}
+    {{- include "xrengine.server.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.server.replicaCount }}
   selector:
     matchLabels:
-      {{- include "xrchat.server.selectorLabels" . | nindent 6 }}
+      {{- include "xrengine.server.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       labels:
-        {{- include "xrchat.server.selectorLabels" . | nindent 8 }}
+        {{- include "xrengine.server.selectorLabels" . | nindent 8 }}
       annotations:
         checksum/config: {{ include (print $.Template.BasePath "/server-configmap.yaml") . | sha256sum }}
     spec:
@@ -21,7 +21,7 @@ spec:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
     {{- end }}
-      serviceAccountName: {{ include "xrchat.server.serviceAccountName" . }}
+      serviceAccountName: {{ include "xrengine.server.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.server.podSecurityContext | nindent 8 }}
       containers:
@@ -32,7 +32,7 @@ spec:
           imagePullPolicy: {{ .Values.server.image.pullPolicy }}
           envFrom:
             - configMapRef:
-                name: {{ include "xrchat.server.fullname" . }}
+                name: {{ include "xrengine.server.fullname" . }}
                 optional: true
           env:
             - name: KUBERNETES
@@ -50,12 +50,12 @@ spec:
                   {{- if .Values.mariadb.existingSecret }}
                   name: {{ .Values.mariadb.existingSecret }}
                   {{- else }}
-                  name: {{ template "xrchat.mariadb.fullname" . }}
+                  name: {{ template "xrengine.mariadb.fullname" . }}
                   {{- end }} 
                   key: mariadb-password
               {{- end }}
             - name: MYSQL_HOST
-              value: {{ template "xrchat.mariadb.host" . }}
+              value: {{ template "xrengine.mariadb.host" . }}
           ports:
             - name: http
               containerPort: 3030

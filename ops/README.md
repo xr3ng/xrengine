@@ -1,18 +1,18 @@
-# xrchat-ops
-Deployment and Operations for xrchat services
+# xrengine-ops
+Deployment and Operations for xrengine services
 
 ## One-Click Deployment on Kubernetes using Helm
 
 You can run the whole platfrom with the following commands:
 ``` bash
-helm repo add xrchat https://xrchat.github.io/xrchat-ops/
+helm repo add xrengine https://xrengine.github.io/xrengine-ops/
 helm repo update
-helm install my-release xrchat/xrchat
+helm install my-release xrengine/xrengine
 ```
 For more details about the XRChat chart
 
-- [XRChat helm chart](xrchat/)
-- [Building the xrchat helm chart](docs/release-helm-chart.md)
+- [XRChat helm chart](xrengine/)
+- [Building the xrengine helm chart](docs/release-helm-chart.md)
 
 For deployment on different cloud providers:
 
@@ -30,8 +30,8 @@ Requires Helm and access to a Kubernetes cluster, if you are new to those, check
 
 You can run the whole platfrom with the following commands:
 ``` bash
-git clone git@github.com:xrchat/xrchat-ops.git
-cd xrchat-ops
+git clone git@github.com:xrengine/xrengine-ops.git
+cd xrengine-ops
 docker-compose up
 ```
 To run specific services
@@ -39,14 +39,14 @@ To run specific services
 docker-compose up <service-name>
 ```
 
-This will pull images from [xrchat's docker hub repo](https://hub.docker.com/u/xrchat)
+This will pull images from [xrengine's docker hub repo](https://hub.docker.com/u/xrengine)
 
 ## XRChat services
 
-- [server](https://github.com/xrchat/xrchat-server): backend server on http://localhost:3030/docs
-- [client](https://github.com/xrchat/xrchat-client): frontend Next.js+react on http://localhost:3000
-- [rts](https://github.com/xrchat/xrchat-realtime-server): Networked AFrame server on http://localhost:8081
-- adminer: a lightweight web app to manage database, http://localhost:8080/?server=db&username=server&db=xrchat  (Note: password is "password")
+- [server](https://github.com/xrengine/xrengine): backend server on http://localhost:3030/docs
+- [client](https://github.com/xrengine/xrengine-client): frontend Next.js+react on http://localhost:3000
+- [rts](https://github.com/xrengine/xrengine-realtime-server): Networked AFrame server on http://localhost:8081
+- adminer: a lightweight web app to manage database, http://localhost:8080/?server=db&username=server&db=xrengine  (Note: password is "password")
 - db: MariaDB on default port [mysql://localhost:3306]() 
 
 ## Build docker/compose stack yourself
@@ -57,13 +57,13 @@ If you want to build the whole compose stack on your machine, and not pull the c
 - clone the 5 repos into the same folder with the same names:
     ```
     |
-    +-- xrchat-client
-    +-- xrchat-server
-    +-- xrchat-ops
-    +-- xrchat-realtime-server
+    +-- xrengine-client
+    +-- xrengine
+    +-- xrengine-ops
+    +-- xrengine-realtime-server
     +-- Spoke
     ```
-- `cd xrchat-ops`
+- `cd xrengine-ops`
 - run `docker-compose -f docker-compose-local.yml build`
 - run `docker-compose -f docker-compose-local.yml up`
 - all services will be running as detailed in [service](Services) section.

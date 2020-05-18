@@ -51,7 +51,7 @@ Risks / Downsides
 * Possibly too many clicks?
 
 
-[login]: https://xrchat.github.io/img/xrc-login.png "login"
-[signup]: https://xrchat.github.io/img/xrc-signup.png "signup"
-[email-sms]: https://xrchat.github.io/img/xrc-email-sms.png "email-sms"
-[lander]: https://xrchat.github.io/img/xrc-lander.png "lander"
+[login]: https://xrengine.github.io/img/xrc-login.png "login"
+[signup]: https://xrengine.github.io/img/xrc-signup.png "signup"
+[email-sms]: https://xrengine.github.io/img/xrc-email-sms.png "email-sms"
+[lander]: https://xrengine.github.io/img/xrc-lander.png "lander"

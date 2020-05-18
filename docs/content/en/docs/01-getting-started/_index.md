@@ -7,7 +7,7 @@ description: >
 ---
 
 {{% pageinfo %}}
-Demo at: https://xrchat.lifescope.io
+Demo at: https://xrengine.lifescope.io
 {{% /pageinfo %}}
 
 ## Prerequisites
@@ -27,13 +27,13 @@ AR Devices
 ## Setup
 
 Web Client 
-https://github.com/xrchat/xrchat-client#xrchat-client
+https://github.com/xrengine/xrengine-client#xrengine-client
 
 Backend server
-https://github.com/xrchat/xrchat-server#xrchat-server
+https://github.com/xrengine/xrengine#xrengine
 
 Cloud Deployment & Services
-https://github.com/xrchat/xrchat-ops#xrchat-ops
+https://github.com/xrengine/xrengine-ops#xrengine-ops
 
 ## Try it out!
 

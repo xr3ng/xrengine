@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/xrchat/xrchat-client.svg?branch=master)](https://travis-ci.org/xrchat/xrchat-client)
+[![Build Status](https://travis-ci.org/xrengine/xrengine-client.svg?branch=master)](https://travis-ci.org/xrengine/xrengine-client)
 # XRChat Client
 ## About
 
@@ -8,7 +8,7 @@ Our goal is an easy-to-use, well documented, end-to-end Javascript (or Typescrip
 
 XRChat is a free, open source, MIT-licensed project. You are welcome to do anything you want with it. We hope that you use it to make something beautiful.
 
-This is the client portion of XRChat. To deploy everything at once with Kubernetes or Docker Compose, check out the branches in xrchat-ops. Or you can start the server with NPM (check out scripts/start-db.sh to get the database runnning), run the xrchat-client client and everything should connect out of the box.
+This is the client portion of XRChat. To deploy everything at once with Kubernetes or Docker Compose, check out the branches in xrengine-ops. Or you can start the server with NPM (check out scripts/start-db.sh to get the database runnning), run the xrengine-client client and everything should connect out of the box.
 
 ## Getting Started
 
@@ -61,10 +61,10 @@ properties for the [NAF](https://github.com/networked-aframe/networked-aframe) n
 You can run it using docker, if you don't have node installed or need to test.
 ``` bash
 # Build the image
-docker build --tag xrchat-client .
+docker build --tag xrengine-client .
 
 # Run the image (deletes itself when you close it)
-docker run -d --rm --name client -e "API_SERVER_URL=http://localhost:3030" -p "3000:3000"  xrchat-client
+docker run -d --rm --name client -e "API_SERVER_URL=http://localhost:3030" -p "3000:3000"  xrengine-client
 
 # Stop the server
 docker stop client
@@ -75,7 +75,7 @@ docker stop client
 This image uses build-time arguments, they are not used during runtime yet
 
 - `NODE_ENV` controls the config/*.js file to load and build against [default: production]
-- `API_SERVER_URL` points to an instance of the xrchat-server [default: http://localhost:3030]
+- `API_SERVER_URL` points to an instance of the xrengine [default: http://localhost:3030]
 
 
 ## Redux store management

@@ -77,5 +77,5 @@ Y: On/Off
 Device Override: WebXR, Desktop, Mobile
 
 
-[map-logged-out]: https://xrchat.github.io/img/xrc-map-logged-out.png "map-logged-out"
-[map]: https://xrchat.github.io/img/xrc-map.png "map"
+[map-logged-out]: https://xrengine.github.io/img/xrc-map-logged-out.png "map-logged-out"
+[map]: https://xrengine.github.io/img/xrc-map.png "map"

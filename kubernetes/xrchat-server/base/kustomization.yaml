@@ -1,10 +1,10 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: xrchat
+namespace: xrengine
 resources:
-  - xrchat-server.yaml
+  - xrengine.yaml
 secretGenerator:
-  - name: xrchat-dev-secrets
-    env: xrchat-dev-secrets.env
+  - name: xrengine-dev-secrets
+    env: xrengine-dev-secrets.env
 generatorOptions:
   disableNameSuffixHash: true

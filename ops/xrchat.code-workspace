@@ -4,13 +4,13 @@
 			"path": "."
 		},
 		{
-			"path": "../xrchat-server"
+			"path": "../xrengine"
 		},
 		{
-			"path": "../xrchat-client"
+			"path": "../xrengine-client"
 		},
 		{
-			"path": "../xrchat-realtime-server"
+			"path": "../xrengine-realtime-server"
 		},
 		{
 			"path": "../Spoke"

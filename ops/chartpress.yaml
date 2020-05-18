@@ -1,5 +1,5 @@
 charts:
-  - name: xrchat
+  - name: xrengine
     repo:
-      git: xrchat/xrchat-ops
-      published: https://xrchat.github.io/xrchat-ops/
+      git: xrengine/xrengine-ops
+      published: https://xrengine.github.io/xrengine-ops/

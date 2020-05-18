@@ -7,10 +7,10 @@ fi
 
 set -x
 
-# ex -> beta-xrchat-realtime-server
+# ex -> beta-xrengine-realtime-server
 
 STAGE=$1
 
-kubectl delete cm/$STAGE-xrchat-server
-kubectl create configmap $STAGE-xrchat-server --from-env-file=.env.server
-kubectl get cm/$STAGE-xrchat-server -o yaml > $STAGE-xrchat-server-configmap.yaml
+kubectl delete cm/$STAGE-xrengine
+kubectl create configmap $STAGE-xrengine --from-env-file=.env.server
+kubectl get cm/$STAGE-xrengine -o yaml > $STAGE-xrengine-configmap.yaml

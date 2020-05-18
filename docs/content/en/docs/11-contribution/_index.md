@@ -63,7 +63,7 @@ https://github.com/RichardLitt/standard-readme
 Dev Setup
 You will need yarn, npm and Docker at a minimum
 Deploy Instructions
-Deployment instructions are covered per-repo, however, to deploy the whole develop cluster, please look at github.com/xrchat/xrchat-ops 
+Deployment instructions are covered per-repo, however, to deploy the whole develop cluster, please look at github.com/xrengine/xrengine-ops 
 Notes & Tools
 Kubernetes
 https://learnk8s.io/nodejs-kubernetes-guide

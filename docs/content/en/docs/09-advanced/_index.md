@@ -17,6 +17,6 @@ This is asss placeholder page that shows you how to use this template site.
 ![advanced-settings][advanced-settings]
 
 
-[help]: https://xrchat.github.io/img/xrc-help.png "help"
-[settings]: https://xrchat.github.io/img/xrc-settings.png "settings"
-[advanced-settings]: https://xrchat.github.io/img/xrc-advanced-settings.png "advanced-settings"
+[help]: https://xrengine.github.io/img/xrc-help.png "help"
+[settings]: https://xrengine.github.io/img/xrc-settings.png "settings"
+[advanced-settings]: https://xrengine.github.io/img/xrc-advanced-settings.png "advanced-settings"
