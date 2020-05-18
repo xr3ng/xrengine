@@ -1,7 +1,7 @@
 {
   "name": "xrengine",
   "description": "A free, open source, scalable social WebXR engine for everyone.",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "homepage": "http://github.com/xr3ngine/xrengine",
   "repository": "http://github.com/xr3ngine/xrengine",
   "private": false,
@@ -21,11 +21,11 @@
     "config": "config/"
   },
   "engines": {
-    "node": "^12.0.0",
+    "node": "^14.0.0",
     "yarn": ">= 0.18.0"
   },
   "bin": {
-    "xrengine": "./cli.js"
+    "xrengine": "./cli.mjs"
   },
   "scripts": {
     "postinstall": "(cd client && yarn install) & (cd docs && npm install)",
