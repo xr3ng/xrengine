@@ -34,8 +34,8 @@ app.configure(
     // TODO: Relate to server config, don't hardcode this here
     specs: {
       info: {
-        title: 'XRChat API Surface',
-        description: 'APIs for the XRChat application',
+        title: 'XREngine API Surface',
+        description: 'APIs for the XREngine application',
         version: '1.0.0'
       }
     }

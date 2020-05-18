@@ -3,7 +3,7 @@ title: "Getting Started"
 linkTitle: "Getting Started"
 weight: 1
 description: >
-  Start Learning, Using, and Creating with XRChat
+  Start Learning, Using, and Creating with XREngine
 ---
 
 {{% pageinfo %}}
@@ -27,13 +27,13 @@ AR Devices
 ## Setup
 
 Web Client 
-https://github.com/xrengine/xrengine-client#xrengine-client
+https://github.com/xr3ngine/xrengine-client#xrengine-client
 
 Backend server
-https://github.com/xrengine/xrengine#xrengine
+https://github.com/xr3ngine/xrengine#xrengine
 
 Cloud Deployment & Services
-https://github.com/xrengine/xrengine-ops#xrengine-ops
+https://github.com/xr3ngine/xrengine-ops#xrengine-ops
 
 ## Try it out!
 

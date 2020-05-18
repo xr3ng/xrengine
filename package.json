@@ -1,6 +1,6 @@
 {
   "name": "xrengine",
-  "description": "Backend server for XRChat, built on Node + Feathers + Express + SQL",
+  "description": "Everything you need to make a WebXR social MMO in a box.",
   "version": "0.0.0",
   "homepage": "",
   "private": true,
@@ -9,8 +9,8 @@
     "feathers"
   ],
   "author": {
-    "name": "Shaw",
-    "email": "shawmakesmusic@gmail.com"
+    "name": "xr3ngine",
+    "email": "info@xrengine.io"
   },
   "contributors": [],
   "bugs": {},
@@ -24,7 +24,7 @@
     "yarn": ">= 0.18.0"
   },
   "scripts": {
-    "postinstall": "(cd client && yarn install)",
+    "postinstall": "(cd client && yarn install) & (cd docs && npm install)",
     "compile": "shx rm -rf lib/ && tsc",
     "dev": "ts-node-dev --no-notify src/",
     "dev-reinit-db": "NODE_ENV=dev FORCE_DB_REFRESH=true ts-node-dev --no-notify src/",
@@ -39,7 +39,8 @@
     "dev-with-client": "(npm run dev) & (cd client && npm run dev 3000)",
     "lint-with-client": "(npm run lint) & (cd client && npm run lint)",
     "start-with-client": "(npm run start) & (cd client && npm run start)",
-    "test-with-client": "(npm run test) & (cd client && npm run test)"
+    "test-with-client": "(npm run test) & (cd client && npm run test)",
+    "compile-docs": "(cd docs "
   },
   "standard": {
     "env": [

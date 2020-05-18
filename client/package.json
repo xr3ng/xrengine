@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xrengine/xrengine-client.git"
+    "url": "git://github.com/xr3ngine/xrengine-client.git"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=dev next --port $PORT",

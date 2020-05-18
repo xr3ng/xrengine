@@ -7,9 +7,9 @@ description: >
 ---
 
 {{% pageinfo %}}
-API Type Reference for XRChat
+API Type Reference for XREngine
 {{% /pageinfo %}}
-XRChat has a flexible typing system, so that new types can be added and automatically seeded into the database.
+XREngine has a flexible typing system, so that new types can be added and automatically seeded into the database.
 
 ## Resource Types
 Resources are references to anything that's statically stored in our volume file storage (i.e S3)

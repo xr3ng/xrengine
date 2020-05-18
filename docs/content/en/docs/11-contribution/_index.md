@@ -3,7 +3,7 @@ title: "Contribution Guidelines"
 linkTitle: "Contribution Guidelines"
 weight: 11
 description: >
-  How to contribute to XRChat
+  How to contribute to XREngine
 ---
 
 {{% pageinfo %}}
@@ -63,7 +63,7 @@ https://github.com/RichardLitt/standard-readme
 Dev Setup
 You will need yarn, npm and Docker at a minimum
 Deploy Instructions
-Deployment instructions are covered per-repo, however, to deploy the whole develop cluster, please look at github.com/xrengine/xrengine-ops 
+Deployment instructions are covered per-repo, however, to deploy the whole develop cluster, please look at github.com/xr3ngine/xrengine-ops 
 Notes & Tools
 Kubernetes
 https://learnk8s.io/nodejs-kubernetes-guide

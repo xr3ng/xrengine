@@ -9,7 +9,7 @@ description: >
 
 ## Structure
 
-XRChat can download and convert videos hosted on external sites into an easily-streamable DASH format and cache them
+XREngine can download and convert videos hosted on external sites into an easily-streamable DASH format and cache them
 on a storage provider you control, such as an S3 bucket in AWS.
 
 The conversion endpoint will download the video, run it through ffmpeg to turn it into 1080p/s at a maximum bitrate of
@@ -170,7 +170,7 @@ The name of the video.
 A description of the video.
 
 ##### url (string)
-The URL of the file in XRChat's storage cache. This will NOT be the original URL of where the video was downloaded from.
+The URL of the file in XREngine's storage cache. This will NOT be the original URL of where the video was downloaded from.
 
 ##### mime_type (string)
 The mime_type of the file. For the manifest.mpd, this will be 'application/dash+xml'. For the associated chunk .m4s
@@ -224,7 +224,7 @@ The name of the video.
 A description of the video.
 
 ##### url (string)
-The URL of the file in XRChat's storage cache. This will NOT be the original URL of where the video was downloaded from.
+The URL of the file in XREngine's storage cache. This will NOT be the original URL of where the video was downloaded from.
 
 ##### mime_type (string)
 The mime_type of the file. For the manifest.mpd, this will be 'application/dash+xml'. For the associated chunk .m4s
@@ -317,7 +317,7 @@ The latter would result in the loss of the 'rating' subfield (and any other subf
  A description of the video.
  
  ##### url (string)
- The URL of the file in XRChat's storage cache. This will NOT be the original URL of where the video was downloaded from.
+ The URL of the file in XREngine's storage cache. This will NOT be the original URL of where the video was downloaded from.
  
  ##### mime_type (string)
  The mime_type of the file. For the manifest.mpd, this will be 'application/dash+xml'. For the associated chunk .m4s
@@ -373,7 +373,7 @@ The latter would result in the loss of the 'rating' subfield (and any other subf
   A description of the video.
   
   ##### url (string)
-  The URL of the file in XRChat's storage cache. This will NOT be the original URL of where the video was downloaded from.
+  The URL of the file in XREngine's storage cache. This will NOT be the original URL of where the video was downloaded from.
   
   ##### mime_type (string)
   The mime_type of the file. For the manifest.mpd, this will be 'application/dash+xml'. For the associated chunk .m4s

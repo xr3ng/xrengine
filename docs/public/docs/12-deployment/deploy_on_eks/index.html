@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.68.3" />
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>XREngine</title><meta property="og:title" content="" />
+<meta property="og:description" content="Deploying XREngine Platform on AWS EKS Connect to your cluster First install AWS CLI, Helm and Kubectl
+# install Helm and Kubectl sudo snap install kubectl --classic sudo snap install helm --classic # Install AWS CLI v2, for Windows and Mac users: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html curl &#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&#34; -o &#34;awscliv2.zip&#34; unzip awscliv2.zip sudo ./aws/install Now load your cluster config
+aws eks --region &lt;us-east-1&gt; update-kubeconfig --name &lt;cluster-name&gt; Prepare your cluster Create HTTPs certificate Create a certificate if needed using UI or CLI for your domain with wildcard subdomains *." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/12-deployment/deploy_on_eks/" />
+<meta property="og:site_name" content="XREngine" />
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Deploying XREngine Platform on AWS EKS Connect to your cluster First install AWS CLI, Helm and Kubectl
+# install Helm and Kubectl sudo snap install kubectl --classic sudo snap install helm --classic # Install AWS CLI v2, for Windows and Mac users: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html curl &#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&#34; -o &#34;awscliv2.zip&#34; unzip awscliv2.zip sudo ./aws/install Now load your cluster config
+aws eks --region &lt;us-east-1&gt; update-kubeconfig --name &lt;cluster-name&gt; Prepare your cluster Create HTTPs certificate Create a certificate if needed using UI or CLI for your domain with wildcard subdomains *.">
+
+<meta itemprop="wordCount" content="185">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Deploying XREngine Platform on AWS EKS Connect to your cluster First install AWS CLI, Helm and Kubectl
+# install Helm and Kubectl sudo snap install kubectl --classic sudo snap install helm --classic # Install AWS CLI v2, for Windows and Mac users: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html curl &#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&#34; -o &#34;awscliv2.zip&#34; unzip awscliv2.zip sudo ./aws/install Now load your cluster config
+aws eks --region &lt;us-east-1&gt; update-kubeconfig --name &lt;cluster-name&gt; Prepare your cluster Create HTTPs certificate Create a certificate if needed using UI or CLI for your domain with wildcard subdomains *."/>
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.bb1ca766e41a0e946ad64cf4afe1ef9cda4b8f5ac09cb29881652bb359f0df3c.css" as="style">
+<link href="/scss/main.min.bb1ca766e41a0e946ad64cf4afe1ef9cda4b8f5ac09cb29881652bb359f0df3c.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">XREngine</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/community/" ><span>Community</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/01-getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting Started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs01-getting-started">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs01-getting-startedexample-page" href="/docs/01-getting-started/example-page/">Example Page</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/02-accounts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Accounts, Login, Logout</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs02-accounts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/03-contacts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Contacts and Organizations</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs03-contacts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/04-virtual-locations/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Virtual Locations</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs04-virtual-locations">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/05-content/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Content</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs05-content">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/06-user-interface/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">User Interface</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs06-user-interface">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/07-payments/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Payments and Subscriptions</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs07-payments">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/08-spoke/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Spoke for XREngine</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs08-spoke">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/09-advanced/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Advanced</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs09-advanced">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/10-api-reference/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">API Reference</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs10-api-reference">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referenceapi-reference" href="/docs/10-api-reference/api-reference/">Parameter Reference</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referenceparameter-reference" href="/docs/10-api-reference/parameter-reference/">Parameter Reference</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referenceswagger" href="/docs/10-api-reference/swagger/">Parameter Reference</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referencetype-reference" href="/docs/10-api-reference/type-reference/">Parameter Reference</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referencefile-upload" href="/docs/10-api-reference/file-upload/">Uploading Files</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referencevideo-caching" href="/docs/10-api-reference/video-caching/">Video Conversion and Caching</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/11-contribution/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Contribution Guidelines</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs11-contribution">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docs12-deploymentdeploy_on_eks" href="/docs/12-deployment/deploy_on_eks/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs12-deploymentmanaging_remote_kubernetes" href="/docs/12-deployment/managing_remote_kubernetes/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs12-deploymentrelease-helm-chart" href="/docs/12-deployment/release-helm-chart/"></a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/xr3ngine/xrengine-docs/edit/master/content/en/docs/12-deployment/deploy_on_eks.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/xr3ngine/xrengine-docs/issues/new?title=" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/xr3ngine/xrengine/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#connect-to-your-cluster">Connect to your cluster</a></li>
+    <li><a href="#prepare-your-cluster">Prepare your cluster</a>
+      <ul>
+        <li><a href="#create-https-certificate">Create HTTPs certificate</a></li>
+        <li><a href="#create-load-balancer-and-ingress-controller">Create Load Balancer and Ingress Controller</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/docs/12-deployment/deploy_on_eks/"></a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1></h1>
+    
+	       
+	<h1 id="deploying-xrengine-platform-on-aws-eks">Deploying XREngine Platform on AWS EKS</h1>
+<h2 id="connect-to-your-cluster">Connect to your cluster</h2>
+<p>First install AWS CLI, Helm and Kubectl</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8f5902;font-style:italic"># install Helm and Kubectl</span>
+sudo snap install kubectl --classic
+sudo snap install helm --classic
+
+<span style="color:#8f5902;font-style:italic"># Install AWS CLI v2, for Windows and Mac users: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html</span> 
+curl <span style="color:#4e9a06">&#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&#34;</span> -o <span style="color:#4e9a06">&#34;awscliv2.zip&#34;</span>
+unzip awscliv2.zip
+sudo ./aws/install 
+
+</code></pre></div><p>Now load your cluster config</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">aws eks --region &lt;us-east-1&gt; update-kubeconfig --name &lt;cluster-name&gt; 
+</code></pre></div><h2 id="prepare-your-cluster">Prepare your cluster</h2>
+<h3 id="create-https-certificate">Create HTTPs certificate</h3>
+<p>Create a certificate if needed using UI or CLI for your domain with wildcard subdomains <code>*.domain.com</code></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">aws acm request-certificate <span style="color:#4e9a06">\
+</span><span style="color:#4e9a06"></span>--domain-name *.domain.com <span style="color:#4e9a06">\
+</span><span style="color:#4e9a06"></span>--validation-method DNS <span style="color:#4e9a06">\
+</span><span style="color:#4e9a06"></span>--idempotency-token <span style="color:#0000cf;font-weight:bold">1234</span> <span style="color:#4e9a06">\
+</span><span style="color:#4e9a06"></span>--options <span style="color:#000">CertificateTransparencyLoggingPreference</span><span style="color:#ce5c00;font-weight:bold">=</span>DISABLED --output text<span style="color:#ce5c00;font-weight:bold">)</span>
+
+</code></pre></div><p>Then store the result CertificateArn into</p>
+<h3 id="create-load-balancer-and-ingress-controller">Create Load Balancer and Ingress Controller</h3>
+<p>You need Nginx-Ingress controller.
+<strong>Warning</strong>: This step will spin up an ALB (Application Load Balancer), which will incure some cost.</p>
+<p>Create a values file like this:
+An actual file exists at <a href="/configs/nginx-ingress-aws-values.yml">/configs/nginx-ingress-aws-values.yml</a></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#8f5902;font-style:italic"># values for nginx-ingress on EKS using Classic ALP</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">rbac</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">create</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">controller</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">config</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">ssl-redirect</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;true&#34;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># Redirect Insecure traffic to Https</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">service</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">targetPorts</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">      </span><span style="color:#204a87;font-weight:bold">http</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>http<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">      </span><span style="color:#204a87;font-weight:bold">https</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>http<span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># SSL termination at the load balancer</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">annotations</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">      </span><span style="color:#204a87;font-weight:bold">service.beta.kubernetes.io/aws-load-balancer-ssl-ports</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;443&#34;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">      </span><span style="color:#204a87;font-weight:bold">service.beta.kubernetes.io/aws-load-balancer-ssl-cert</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;&lt;ACM Certificate ARN for SSL&gt;&#34;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></code></pre></div><p>Then install the nginx-ingress using the values file you created</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">helm install nginx --values configs/nginx-ingress-aws-values.yml stable/nginx-ingress
+</code></pre></div>
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified January 1, 0001
+</div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" href="https://github.com/xr3ngine/xrengine">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Discord" aria-label="Discord">
+    <a class="text-white" target="_blank" href="https://discord.gg/A4XCDpN">
+      <i class="fab fa-discord"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 XREngine All Rights Reserved</small>
+        
+	
+		<p class="mt-2"><a href="/about/">About XREngine</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script src="/js/main.min.29b0315468c00226fa6f4556a9cebc0ac4fe1ce1457a01b22c0a06b329877383.js" integrity="sha256-KbAxVGjAAib6b0VWqc68CsT&#43;HOFFegGyLAoGsymHc4M=" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>

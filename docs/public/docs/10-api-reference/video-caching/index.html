@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.68.3" />
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Video Conversion and Caching | XREngine</title><meta property="og:title" content="Video Conversion and Caching" />
+<meta property="og:description" content="Downloading, converting, and caching videos from an external URL
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/10-api-reference/video-caching/" />
+<meta property="article:published_time" content="2017-01-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-01-05T00:00:00+00:00" /><meta property="og:site_name" content="XREngine" />
+<meta itemprop="name" content="Video Conversion and Caching">
+<meta itemprop="description" content="Downloading, converting, and caching videos from an external URL
+">
+<meta itemprop="datePublished" content="2017-01-05T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-01-05T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2334">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Video Conversion and Caching"/>
+<meta name="twitter:description" content="Downloading, converting, and caching videos from an external URL
+"/>
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.bb1ca766e41a0e946ad64cf4afe1ef9cda4b8f5ac09cb29881652bb359f0df3c.css" as="style">
+<link href="/scss/main.min.bb1ca766e41a0e946ad64cf4afe1ef9cda4b8f5ac09cb29881652bb359f0df3c.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">XREngine</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/community/" ><span>Community</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/01-getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting Started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs01-getting-started">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs01-getting-startedexample-page" href="/docs/01-getting-started/example-page/">Example Page</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/02-accounts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Accounts, Login, Logout</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs02-accounts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/03-contacts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Contacts and Organizations</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs03-contacts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/04-virtual-locations/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Virtual Locations</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs04-virtual-locations">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/05-content/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Content</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs05-content">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/06-user-interface/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">User Interface</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs06-user-interface">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/07-payments/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Payments and Subscriptions</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs07-payments">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/08-spoke/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Spoke for XREngine</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs08-spoke">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/09-advanced/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Advanced</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs09-advanced">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/10-api-reference/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">API Reference</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs10-api-reference">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referenceapi-reference" href="/docs/10-api-reference/api-reference/">Parameter Reference</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referenceparameter-reference" href="/docs/10-api-reference/parameter-reference/">Parameter Reference</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referenceswagger" href="/docs/10-api-reference/swagger/">Parameter Reference</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referencetype-reference" href="/docs/10-api-reference/type-reference/">Parameter Reference</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referencefile-upload" href="/docs/10-api-reference/file-upload/">Uploading Files</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docs10-api-referencevideo-caching" href="/docs/10-api-reference/video-caching/">Video Conversion and Caching</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/11-contribution/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Contribution Guidelines</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs11-contribution">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs12-deploymentdeploy_on_eks" href="/docs/12-deployment/deploy_on_eks/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs12-deploymentmanaging_remote_kubernetes" href="/docs/12-deployment/managing_remote_kubernetes/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs12-deploymentrelease-helm-chart" href="/docs/12-deployment/release-helm-chart/"></a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/xr3ngine/xrengine-docs/edit/master/content/en/docs/10-api-reference/video-caching.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/xr3ngine/xrengine-docs/issues/new?title=Video%20Conversion%20and%20Caching" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/xr3ngine/xrengine/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#structure">Structure</a>
+      <ul>
+        <li><a href="#public-videos">Public Videos</a></li>
+        <li><a href="#private-videos">Private Videos</a></li>
+        <li><a href="#thumbnails">Thumbnails</a></li>
+        <li><a href="#attribution">Attribution</a></li>
+        <li><a href="#resulting-static-resources">Resulting static-resources</a></li>
+      </ul>
+    </li>
+    <li><a href="#api">API</a>
+      <ul>
+        <li><a href="#create-a-cached-video">Create a Cached Video</a></li>
+        <li><a href="#example-post-body">Example Post Body</a></li>
+        <li><a href="#find-cached-videos">Find Cached Videos</a></li>
+        <li><a href="#get-a-single-cached-video">Get a single Cached Video</a></li>
+        <li><a href="#patch-cached-video">Patch Cached Video</a></li>
+        <li><a href="#put-cached-video">PUT Cached Video</a></li>
+        <li><a href="#delete-cached-videos">Delete Cached Videos</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/10-api-reference/">API Reference</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/docs/10-api-reference/video-caching/">Video Conversion and Caching</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>Video Conversion and Caching</h1>
+    <div class="lead">Downloading, converting, and caching videos from an external URL</div>
+	       
+	<h2 id="structure">Structure</h2>
+<p>XREngine can download and convert videos hosted on external sites into an easily-streamable DASH format and cache them
+on a storage provider you control, such as an S3 bucket in AWS.</p>
+<p>The conversion endpoint will download the video, run it through ffmpeg to turn it into 1080p/s at a maximum bitrate of
+7 Mbps using the x264 codec, and then output a DASH manifest.mpd file pointing to related chunks of the video, as well
+as .m3u8 files for playing on Apple devices. These will all be stored in a folder in your storage provider.</p>
+<h3 id="public-videos">Public Videos</h3>
+<p>If the files are marked as publicly available (currently the default state), they will be stored in
+<code>&lt;storage_provider_path&gt;/public/&lt;video_source_name&gt;/&lt;source_video_id&gt;/video/&lt;filename&gt;</code>. For example, if caching a
+video from Youtube whose URL is <a href="https://www.youtube.com/watch?v=0XrH2WO1Mzs,">https://www.youtube.com/watch?v=0XrH2WO1Mzs,</a> the path for the manifest.mpd file would be
+<code>https://s3.amazonaws.com/&lt;bucket_name&gt;/public/youtube/0XrH2WO1Mzs/video/manifest.mpd</code>; all of its associated files
+would be located alongside it in the /video folder.</p>
+<h3 id="private-videos">Private Videos</h3>
+<p>If the files are not public, the UUID identifying the manifest.mpd file will be used to encompass all of the generated
+files on the storage provider. The files will be located at <code>&lt;UUID&gt;/video/&lt;filename&gt;</code>. For example, a cached
+non-public video&rsquo;s manifest.mpd could be found at
+<code>https://s3.amazonaws.com/&lt;bucket_name&gt;/cebac911-8ef9-11ea-8abe-093e24568d56/video/manifest.mpd</code>; all of its
+associated files would be located alongside it in the /video folder.</p>
+<h3 id="thumbnails">Thumbnails</h3>
+<p>A thumbnail can be provided via a URL when calling the API. If no URL is provided, then the conversion backend will
+obtain the default thumbnail from the provider source and use that instead. In either case, the thumbnail will be
+located in the /image folder alongside the /video folder, and will be titled <code>thumbnail.&lt;extension&gt;</code>
+To use the public example above, if the manifest.mpd file is located at
+<code>https://s3.amazonaws.com/&lt;bucket_name&gt;/public/youtube/0XrH2WO1Mzs/video/manifest.mpd</code>, the thumbnail would be at
+<code>https://s3.amazonaws.com/&lt;bucket_name&gt;/public/youtube/0XrH2WO1Mzs/image/thumbnail.jpg</code></p>
+<h3 id="attribution">Attribution</h3>
+<p>If the &lsquo;creator&rsquo; field is specified, an &lsquo;attribution&rsquo; entity will be created that is referenced by the database entry
+for the manifest.mpd file. The attribution will have the name specified in &lsquo;creator&rsquo; as well as the original URL of the
+video.</p>
+<h3 id="resulting-static-resources">Resulting static-resources</h3>
+<p>Many files will be generated from the conversion process. They will all be referenced in the database as a
+&lsquo;static-resource&rsquo;; a cached video may have several dozen associated static-resources.</p>
+<p>The manifest.mpd file is the main point of entry. All other files generated will reference this static-resource as their
+parent; this is the only file that does not have a parent.
+This database entry will have the <code>mime_type</code> &lsquo;application/dash+xml&rsquo;.</p>
+<p>All of the .m4s chunks that manifest.mpd references will have the <code>mime_type</code> &lsquo;video/iso.segment&rsquo;.</p>
+<p>The .m3u8 files for Apple playback will have the <code>mime_type</code> &lsquo;application/x-mpegURL&rsquo;.</p>
+<p>All of the above file types will have the <code>type</code> &lsquo;video&rsquo; to indicate that they are associated with video playback.</p>
+<p>The thumbnail file will have whatever <code>mime_type</code> the image is of, e.g. &lsquo;image/jpg&rsquo;, &lsquo;image/png&rsquo;, etc.
+Thumbnails will that the <code>type</code> of &lsquo;image&rsquo;.</p>
+<h2 id="api">API</h2>
+<p>The path for creating cached videos is /video. All of the files generated from this process are of type
+&lsquo;static-resource&rsquo;, so to retrieve/update/delete the resulting files, one will need to interact with them through the
+/static-resource endpoint.</p>
+<h3 id="create-a-cached-video">Create a Cached Video</h3>
+<p><code>POST /video</code></p>
+<p>A JSON body will contain information about the video. This endpoint accepts arrays and can
+process multiple videos simultaneously.</p>
+<h4 id="fields">Fields</h4>
+<h5 id="name-stringrequired">name (string)[required]</h5>
+<p>The name of the video.</p>
+<h5 id="url-stringrequired">url (string)[required]</h5>
+<p>The URL from which to download the video.</p>
+<h5 id="description-string">description (string)</h5>
+<p>A longer description of the video.</p>
+<h5 id="metadata-object">metadata (object)</h5>
+<p>Additional information about the video. None of the sub-fields are explicitly specified in the schema, but some that
+the front-end client can use are listed here:</p>
+<h6 id="thumbnail_url-string">thumbnail_url (string)</h6>
+<p>A URL from which to get and cache a thumbnail for this video. If not specified, a thumbnail will be retrieved from
+the video provider source.</p>
+<h6 id="rating-string">rating (string)</h6>
+<p>A content rating for the video, e.g. &lsquo;All&rsquo;, &lsquo;Teen&rsquo;,  &lsquo;Youth&rsquo;, etc. Does not have to follow any established rating system.</p>
+<h6 id="categories-arraystring">categories (array[string])</h6>
+<p>An array of categories associated with this video. Categories do not have to follow any established system.</p>
+<h6 id="runtime-string">runtime (string)</h6>
+<p>The length of the video in hours:minutes:seconds</p>
+<h5 id="creator-string">creator (string)</h5>
+<p>The person or entity that created/claims ownership over the video. An &lsquo;attribution&rsquo; entity will be created from this
+value.</p>
+<h3 id="example-post-body">Example Post Body</h3>
+<pre><code>[
+	{
+		&quot;name&quot;: &quot;Example Video #1&quot;,
+		&quot;url&quot;: &quot;https://www.youtube.com/watch?v=AbCDefg&quot;,
+		&quot;description&quot;: &quot;Learn about examples in this thrilling video&quot;,
+		&quot;metadata&quot;: {
+			&quot;thumbnail_url&quot;: &quot;https://hosting-site.com/1234/image.png&quot;,
+			&quot;rating&quot;: &quot;Teen&quot;,
+			&quot;categories&quot;: [
+				&quot;Category 1&quot;,
+				&quot;Category C&quot;
+			],
+			&quot;runtime&quot;: &quot;3:45&quot;
+		},
+		&quot;creator&quot;: &quot;The Example Channel&quot;
+	},
+	{
+		&quot;name&quot;: &quot;Another Example&quot;,
+		&quot;url&quot;: &quot;https://www.youtube.com/watch?v=1j4_37bh&quot;,
+		&quot;description&quot;: &quot;Even more thrilling example footage&quot;,
+		&quot;metadata&quot;: {
+			&quot;rating&quot;: &quot;All&quot;,
+			&quot;categories&quot;: [
+				&quot;Category 1&quot;
+			],
+			&quot;runtime&quot;: &quot;5:08&quot;
+		},
+		&quot;creator&quot;: &quot;Steve Jones&quot;
+	}
+]
+</code></pre><p>As mentioned earlier, this endpoint can accept an array of JSON objects to do a multi-post. You can also pass it one
+JSON object at a time if you&rsquo;d prefer; you do not have to post an array.</p>
+<h3 id="find-cached-videos">Find Cached Videos</h3>
+<p><code>GET /static-resource</code></p>
+<p>As mentioned in &lsquo;Resulting static-resources&rsquo;, the database entries created from caching a video are all
+&lsquo;static-resources&rsquo;. You cannot do a GET on /video, but instead must interact with the API using the /static-resource
+endpoint.</p>
+<p>As mentioned earlier, the database entry for the manifest.mpd file is considered the master entry for the cached video.
+Adding the query &lsquo;?mime_type=application/dash%2bxml&rsquo; to all GETs will limit the results to just the important ones, e.g.
+<code>GET /static-resource?mime_type=application/dash%2bxml</code> will retrieve all of the public manifest.mpd entries.</p>
+<h4 id="fields-1">Fields</h4>
+<p>The following static-resource fields will be returned:</p>
+<h5 id="id-string">id (string)</h5>
+<p>The UUID of the static-resource.</p>
+<h5 id="name-string">name (string)</h5>
+<p>The name of the video.</p>
+<h5 id="description-string-1">description (string)</h5>
+<p>A description of the video.</p>
+<h5 id="url-string">url (string)</h5>
+<p>The URL of the file in XREngine&rsquo;s storage cache. This will NOT be the original URL of where the video was downloaded from.</p>
+<h5 id="mime_type-string">mime_type (string)</h5>
+<p>The mime_type of the file. For the manifest.mpd, this will be &lsquo;application/dash+xml&rsquo;. For the associated chunk .m4s
+files, this will be &lsquo;video/iso.segment&rsquo;. For the .m3u8 files, this will be &lsquo;application/x-mpegURL&rsquo;.</p>
+<h5 id="metadata-string">metadata (string)</h5>
+<p>This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&rsquo;re using,
+to get the metadata object.</p>
+<h5 id="createdat-string">createdAt (string)</h5>
+<p>The datetime at which the static-resource was created.</p>
+<h5 id="updatedat-string">updatedAt (string)</h5>
+<p>The datetime at which the static-resource was last modified.</p>
+<h5 id="type-string">type (string)</h5>
+<p>The general type of the object to which the static-resource refers. For cached videos, this will be &lsquo;video&rsquo; regardless
+of the mime_type; the associated thumbnail will be of type &lsquo;image&rsquo;.</p>
+<h5 id="attributionid-string">attributionId (string)</h5>
+<p>The UUID of the attribution of this video. Will be null if no &lsquo;creator&rsquo; was passed during creation.</p>
+<h5 id="userid-string">userId (string)</h5>
+<p>The UUID of the User that owns this cached video. Will be null if it&rsquo;s a public video.</p>
+<h5 id="parentresourceid-string">parentResourceId (string)</h5>
+<p>The UUID of the parent static-resource represeting the manifest.mpd file for this cached video. Will be null for the
+manifest.mpd static-resource, as it is the &lsquo;master&rsquo; resource.</p>
+<h5 id="attribution-object">attribution (object)</h5>
+<p>The associated attribution for the video. Will be null if no &lsquo;creator&rsquo; was passed during creation.</p>
+<h3 id="get-a-single-cached-video">Get a single Cached Video</h3>
+<p><code>GET /static-resource/&lt;UUID&gt;</code></p>
+<p>As mentioned in &lsquo;Resulting static-resources&rsquo;, the database entries created from caching a video are all
+&lsquo;static-resources&rsquo;. You cannot do a GET on /video/<UUID>, but instead must interact with the API using the
+/static-resource endpoint.</p>
+<h4 id="fields-2">Fields</h4>
+<p>The following static-resource fields will be returned:</p>
+<h5 id="id-string-1">id (string)</h5>
+<p>The UUID of the static-resource.</p>
+<h5 id="name-string-1">name (string)</h5>
+<p>The name of the video.</p>
+<h5 id="description-string-2">description (string)</h5>
+<p>A description of the video.</p>
+<h5 id="url-string-1">url (string)</h5>
+<p>The URL of the file in XREngine&rsquo;s storage cache. This will NOT be the original URL of where the video was downloaded from.</p>
+<h5 id="mime_type-string-1">mime_type (string)</h5>
+<p>The mime_type of the file. For the manifest.mpd, this will be &lsquo;application/dash+xml&rsquo;. For the associated chunk .m4s
+files, this will be &lsquo;video/iso.segment&rsquo;. For the .m3u8 files, this will be &lsquo;application/x-mpegURL&rsquo;.</p>
+<h5 id="metadata-string-1">metadata (string)</h5>
+<p>This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&rsquo;re using,
+to get the metadata object.</p>
+<h5 id="createdat-string-1">createdAt (string)</h5>
+<p>The datetime at which the static-resource was created.</p>
+<h5 id="updatedat-string-1">updatedAt (string)</h5>
+<p>The datetime at which the static-resource was last modified.</p>
+<h5 id="type-string-1">type (string)</h5>
+<p>The general type of the object to which the static-resource refers. For cached videos, this will be &lsquo;video&rsquo; regardless
+of the mime_type; the associated thumbnail will be of type &lsquo;image&rsquo;.</p>
+<h5 id="attributionid-string-1">attributionId (string)</h5>
+<p>The UUID of the attribution of this video. Will be null if no &lsquo;creator&rsquo; was passed during creation.</p>
+<h5 id="userid-string-1">userId (string)</h5>
+<p>The UUID of the User that owns this cached video. Will be null if it&rsquo;s a public video.</p>
+<h5 id="parentresourceid-string-1">parentResourceId (string)</h5>
+<p>The UUID of the parent static-resource represeting the manifest.mpd file for this cached video. Will be null for the
+manifest.mpd static-resource, as it is the &lsquo;master&rsquo; resource.</p>
+<h3 id="patch-cached-video">Patch Cached Video</h3>
+<p><code>PATCH /static-resource/&lt;UUID&gt;</code></p>
+<p>As mentioned in &lsquo;Resulting static-resources&rsquo;, the database entries created from caching a video are all
+&lsquo;static-resources&rsquo;. You cannot do a PATCH on /video, but instead must interact with the API using the /static-resource
+endpoint.</p>
+<p>To update specific fields on a static-resource, make a PATCH to /static-resource/<the UUID of the resource>. As this is
+a PATCH, you only need to include the fields you want to change. Updating a manifest.mpd resource will not propagate
+changes to any children of that resource, though since all information such as metadata, name, description,
+attribution, etc. should be read off of the &lsquo;master&rsquo; static-resource, there&rsquo;s no need to update all of its children
+anyway.</p>
+<p><strong>NOTE ON PATCHING METADATA</strong>
+The metadata field is stored in SQL as a JSON field, meaning as stringified JSON. If you are patching a subfield in
+there, you should make sure to set every subfield that is remaining the same, as well.</p>
+<p>If you wanted to change the thumbnail_url subfield in</p>
+<pre><code>{
+    &quot;metadata&quot;: {
+       &quot;thumbnail_url&quot;: &quot;https://some-url.com/image.jpg&quot;,
+       &quot;rating&quot;: &quot;All&quot;
+    }
+}
+</code></pre><p>you should send the following body</p>
+<pre><code>{
+     &quot;metadata&quot;: {
+        &quot;thumbnail_url&quot;: &quot;https://some-new-url.com/image.png&quot;,
+        &quot;rating&quot;: &quot;All&quot;
+     }
+}
+</code></pre><p>and NOT</p>
+<pre><code>{
+     &quot;metadata&quot;: {
+        &quot;thumbnail_url&quot;: &quot;https://this-is-incorrect.com/image.png&quot;
+     }
+}
+</code></pre><p>The latter would result in the loss of the &lsquo;rating&rsquo; subfield (and any other subfields that weren&rsquo;t explicitly defined).</p>
+<h4 id="fields-3">Fields</h4>
+<p>The following static-resource fields will be returned:</p>
+<h5 id="id-string-2">id (string)</h5>
+<p>The UUID of the static-resource.</p>
+<h5 id="name-string-2">name (string)</h5>
+<p>The name of the video.</p>
+<h5 id="description-string-3">description (string)</h5>
+<p>A description of the video.</p>
+<h5 id="url-string-2">url (string)</h5>
+<p>The URL of the file in XREngine&rsquo;s storage cache. This will NOT be the original URL of where the video was downloaded from.</p>
+<h5 id="mime_type-string-2">mime_type (string)</h5>
+<p>The mime_type of the file. For the manifest.mpd, this will be &lsquo;application/dash+xml&rsquo;. For the associated chunk .m4s
+files, this will be &lsquo;video/iso.segment&rsquo;. For the .m3u8 files, this will be &lsquo;application/x-mpegURL&rsquo;.</p>
+<h5 id="metadata-string-2">metadata (string)</h5>
+<p>This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&rsquo;re using,
+to get the metadata object.</p>
+<h5 id="createdat-string-2">createdAt (string)</h5>
+<p>The datetime at which the static-resource was created.</p>
+<h5 id="updatedat-string-2">updatedAt (string)</h5>
+<p>The datetime at which the static-resource was last modified.</p>
+<h5 id="type-string-2">type (string)</h5>
+<p>The general type of the object to which the static-resource refers. For cached videos, this will be &lsquo;video&rsquo; regardless
+of the mime_type; the associated thumbnail will be of type &lsquo;image&rsquo;.</p>
+<h5 id="attributionid-string-2">attributionId (string)</h5>
+<p>The UUID of the attribution of this video. Will be null if no &lsquo;creator&rsquo; was passed during creation.</p>
+<h5 id="userid-string-2">userId (string)</h5>
+<p>The UUID of the User that owns this cached video. Will be null if it&rsquo;s a public video.</p>
+<h5 id="parentresourceid-string-2">parentResourceId (string)</h5>
+<p>The UUID of the parent static-resource representing the manifest.mpd file for this cached video. Will be null for the
+manifest.mpd static-resource, as it is the &lsquo;master&rsquo; resource.</p>
+<h3 id="put-cached-video">PUT Cached Video</h3>
+<p><code>PUT /static-resource/&lt;UUID&gt;</code></p>
+<p>As mentioned in &lsquo;Resulting static-resources&rsquo;, the database entries created from caching a video are all
+&lsquo;static-resources&rsquo;. You cannot do a PUT on /video, but instead must interact with the API using the /static-resource
+endpoint.</p>
+<p>To update the entirety of a static-resource, make a PUT to /static-resource/<the UUID of the resource>. Updating a
+manifest.mpd resource will not propagate changes to any children of that resource, though since all information such as
+metadata, name, description, attribution, etc. should be read off of the &lsquo;master&rsquo; static-resource, there&rsquo;s no need to
+update all of its children anyway.</p>
+<h4 id="fields-4">Fields</h4>
+<p>The following static-resource fields will be returned:</p>
+<h5 id="id-string-3">id (string)</h5>
+<p>The UUID of the static-resource.</p>
+<h5 id="name-string-3">name (string)</h5>
+<p>The name of the video.</p>
+<h5 id="description-string-4">description (string)</h5>
+<p>A description of the video.</p>
+<h5 id="url-string-3">url (string)</h5>
+<p>The URL of the file in XREngine&rsquo;s storage cache. This will NOT be the original URL of where the video was downloaded from.</p>
+<h5 id="mime_type-string-3">mime_type (string)</h5>
+<p>The mime_type of the file. For the manifest.mpd, this will be &lsquo;application/dash+xml&rsquo;. For the associated chunk .m4s
+files, this will be &lsquo;video/iso.segment&rsquo;. For the .m3u8 files, this will be &lsquo;application/x-mpegURL&rsquo;.</p>
+<h5 id="metadata-string-3">metadata (string)</h5>
+<p>This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&rsquo;re using,
+to get the metadata object.</p>
+<h5 id="createdat-string-3">createdAt (string)</h5>
+<p>The datetime at which the static-resource was created.</p>
+<h5 id="updatedat-string-3">updatedAt (string)</h5>
+<p>The datetime at which the static-resource was last modified.</p>
+<h5 id="type-string-3">type (string)</h5>
+<p>The general type of the object to which the static-resource refers. For cached videos, this will be &lsquo;video&rsquo; regardless
+of the mime_type; the associated thumbnail will be of type &lsquo;image&rsquo;.</p>
+<h5 id="attributionid-string-3">attributionId (string)</h5>
+<p>The UUID of the attribution of this video. Will be null if no &lsquo;creator&rsquo; was passed during creation.</p>
+<h5 id="userid-string-3">userId (string)</h5>
+<p>The UUID of the User that owns this cached video. Will be null if it&rsquo;s a public video.</p>
+<h5 id="parentresourceid-string-3">parentResourceId (string)</h5>
+<p>The UUID of the parent static-resource representing the manifest.mpd file for this cached video. Will be null for the
+manifest.mpd static-resource, as it is the &lsquo;master&rsquo; resource.</p>
+<h3 id="delete-cached-videos">Delete Cached Videos</h3>
+<p><code>DELETE /static-resource/&lt;UUID&gt;</code></p>
+<p>As mentioned in &lsquo;Resulting static-resources&rsquo;, the database entries created from caching a video are all
+&lsquo;static-resources&rsquo;. You cannot do a DELETE on /video, but instead must interact with the API using the /static-resource
+endpoint.</p>
+<p>To delete a static-resource, make a DELETE to /static-resource/<the UUID of the resource>. All children of that
+resource will be deleted, as will the cached file referenced in the &lsquo;url&rsquo; field. This means that if you delete the
+&lsquo;master&rsquo; static-resource pointing to the manifest.mpd file, ALL of the associated .m4s and .m3u8 resources and stored
+files will be removed, as will the thumbnail. This is the proper way to remove a cached video from the system.</p>
+<p>Since public videos all get uploaded to a standardized path instead of having unique UUIDs in the stored paths,
+if there are multiple database references to a single video, and one of those references is deleted, the remaining
+one will point to nonexistent files.</p>
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified January 5, 2017
+</div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" href="https://github.com/xr3ngine/xrengine">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Discord" aria-label="Discord">
+    <a class="text-white" target="_blank" href="https://discord.gg/A4XCDpN">
+      <i class="fab fa-discord"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 XREngine All Rights Reserved</small>
+        
+	
+		<p class="mt-2"><a href="/about/">About XREngine</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script src="/js/main.min.29b0315468c00226fa6f4556a9cebc0ac4fe1ce1457a01b22c0a06b329877383.js" integrity="sha256-KbAxVGjAAib6b0VWqc68CsT&#43;HOFFegGyLAoGsymHc4M=" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>

@@ -1,4 +1,4 @@
-# Deploying XRChat Platform on AWS EKS
+# Deploying XREngine Platform on AWS EKS
 
 ## Connect to your cluster
 

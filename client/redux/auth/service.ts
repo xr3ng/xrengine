@@ -39,8 +39,8 @@ export async function doLoginAuto (dispatch: Dispatch) {
     return
   }
 
-  await client.authentication.setAccessToken(accessToken as string)
-  client.reAuthenticate()
+  await (client as any).authentication.setAccessToken(accessToken as string)
+  (client as any).reAuthenticate()
     .then((res: any) => {
       if (res) {
         const authUser = resolveAuthUser(res)
@@ -85,9 +85,9 @@ export function loginUserByPassword (form: EmailLoginForm) {
       return
     }
 
-    dispatch(actionProcessing(true))
+    dispatch(actionProcessing(true));
 
-    client.authenticate({
+    (client as any).authenticate({
       strategy: 'local',
       email: form.email,
       password: form.password
@@ -96,7 +96,7 @@ export function loginUserByPassword (form: EmailLoginForm) {
         const authUser = resolveAuthUser(res)
 
         if (!authUser.identityProvider.isVerified) {
-          client.logout()
+          (client as any).logout()
 
           window.location.href = '/auth/confirm'
           dispatch(registerUserByEmailSuccess(authUser.identityProvider))
@@ -142,9 +142,9 @@ export function loginUserByFacebook () {
 
 export function loginUserByJwt (accessToken: string, redirectSuccess: string, redirectError: string): any {
   return (dispatch: Dispatch) => {
-    dispatch(actionProcessing(true))
+    dispatch(actionProcessing(true));
 
-    client.authenticate({
+    (client as any).authenticate({
       strategy: 'jwt',
       accessToken
     })
@@ -167,8 +167,8 @@ export function loginUserByJwt (accessToken: string, redirectSuccess: string, re
 
 export function logoutUser () {
   return (dispatch: Dispatch) => {
-    dispatch(actionProcessing(true))
-    client.logout()
+    dispatch(actionProcessing(true));
+    (client as any).logout()
       .then(() => dispatch(didLogout()))
       .catch(() => dispatch(didLogout()))
       .finally(() => dispatch(actionProcessing(false)))

@@ -9,14 +9,14 @@ helm repo add xrengine https://xrengine.github.io/xrengine-ops/
 helm repo update
 helm install my-release xrengine/xrengine
 ```
-For more details about the XRChat chart
+For more details about the XREngine chart
 
-- [XRChat helm chart](xrengine/)
+- [XREngine helm chart](xrengine/)
 - [Building the xrengine helm chart](docs/release-helm-chart.md)
 
 For deployment on different cloud providers:
 
-- [Deploying XRChat on AWS EKS](docs/deploy_on_eks.md)
+- [Deploying XREngine on AWS EKS](docs/deploy_on_eks.md)
 - [Managing Remote Kubernets Clusters - TBD](docs/managing_remote_kubernets.md)
 
 Requires Helm and access to a Kubernetes cluster, if you are new to those, check the following instructions:
@@ -41,11 +41,11 @@ docker-compose up <service-name>
 
 This will pull images from [xrengine's docker hub repo](https://hub.docker.com/u/xrengine)
 
-## XRChat services
+## XREngine services
 
-- [server](https://github.com/xrengine/xrengine): backend server on http://localhost:3030/docs
-- [client](https://github.com/xrengine/xrengine-client): frontend Next.js+react on http://localhost:3000
-- [rts](https://github.com/xrengine/xrengine-realtime-server): Networked AFrame server on http://localhost:8081
+- [server](https://github.com/xr3ngine/xrengine): backend server on http://localhost:3030/docs
+- [client](https://github.com/xr3ngine/xrengine-client): frontend Next.js+react on http://localhost:3000
+- [rts](https://github.com/xr3ngine/xrengine-realtime-server): Networked AFrame server on http://localhost:8081
 - adminer: a lightweight web app to manage database, http://localhost:8080/?server=db&username=server&db=xrengine  (Note: password is "password")
 - db: MariaDB on default port [mysql://localhost:3306]() 
 

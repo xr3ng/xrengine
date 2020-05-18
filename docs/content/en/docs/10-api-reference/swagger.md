@@ -10,4 +10,4 @@ description: >
 
 Swagger integration will go here (visit Docsy Swagger integration and add it!)
 
-For now, you can view Swagger API docs by launching XRChat server and visiting localhost:3030/docs.html
+For now, you can view Swagger API docs by launching XREngine server and visiting localhost:3030/docs.html

@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.68.3" />
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Uploading Files | XREngine</title><meta property="og:title" content="Uploading Files" />
+<meta property="og:description" content="Uploading files directly to a storage provider
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/10-api-reference/file-upload/" />
+<meta property="article:published_time" content="2017-01-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-01-05T00:00:00+00:00" /><meta property="og:site_name" content="XREngine" />
+<meta itemprop="name" content="Uploading Files">
+<meta itemprop="description" content="Uploading files directly to a storage provider
+">
+<meta itemprop="datePublished" content="2017-01-05T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-01-05T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1177">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Uploading Files"/>
+<meta name="twitter:description" content="Uploading files directly to a storage provider
+"/>
+
+
+
+
+
+<link rel="preload" href="/scss/main.min.bb1ca766e41a0e946ad64cf4afe1ef9cda4b8f5ac09cb29881652bb359f0df3c.css" as="style">
+<link href="/scss/main.min.bb1ca766e41a0e946ad64cf4afe1ef9cda4b8f5ac09cb29881652bb359f0df3c.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">XREngine</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/community/" ><span>Community</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/01-getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting Started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs01-getting-started">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs01-getting-startedexample-page" href="/docs/01-getting-started/example-page/">Example Page</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/02-accounts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Accounts, Login, Logout</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs02-accounts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/03-contacts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Contacts and Organizations</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs03-contacts">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/04-virtual-locations/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Virtual Locations</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs04-virtual-locations">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/05-content/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Content</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs05-content">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/06-user-interface/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">User Interface</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs06-user-interface">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/07-payments/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Payments and Subscriptions</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs07-payments">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/08-spoke/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Spoke for XREngine</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs08-spoke">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/09-advanced/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Advanced</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs09-advanced">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/10-api-reference/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">API Reference</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs10-api-reference">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referenceapi-reference" href="/docs/10-api-reference/api-reference/">Parameter Reference</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referenceparameter-reference" href="/docs/10-api-reference/parameter-reference/">Parameter Reference</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referenceswagger" href="/docs/10-api-reference/swagger/">Parameter Reference</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referencetype-reference" href="/docs/10-api-reference/type-reference/">Parameter Reference</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docs10-api-referencefile-upload" href="/docs/10-api-reference/file-upload/">Uploading Files</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs10-api-referencevideo-caching" href="/docs/10-api-reference/video-caching/">Video Conversion and Caching</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/11-contribution/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Contribution Guidelines</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs11-contribution">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs12-deploymentdeploy_on_eks" href="/docs/12-deployment/deploy_on_eks/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs12-deploymentmanaging_remote_kubernetes" href="/docs/12-deployment/managing_remote_kubernetes/"></a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs12-deploymentrelease-helm-chart" href="/docs/12-deployment/release-helm-chart/"></a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/xr3ngine/xrengine-docs/edit/master/content/en/docs/10-api-reference/file-upload.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/xr3ngine/xrengine-docs/issues/new?title=Uploading%20Files" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/xr3ngine/xrengine/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#structure">Structure</a>
+      <ul>
+        <li><a href="#upload-path">Upload path</a></li>
+        <li><a href="#thumbnails">Thumbnails</a></li>
+      </ul>
+    </li>
+    <li><a href="#api">API</a>
+      <ul>
+        <li><a href="#uploading-a-file-and-optionally-a-thumbnail">Uploading a file (and optionally a thumbnail)</a></li>
+        <li><a href="#get-uploaded-file">Get Uploaded File</a></li>
+        <li><a href="#patch-uploaded-file">Patch Uploaded File</a></li>
+        <li><a href="#put-uploaded-file">Put Uploaded File</a></li>
+        <li><a href="#delete-uploaded-file">Delete Uploaded File</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/10-api-reference/">API Reference</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/docs/10-api-reference/file-upload/">Uploading Files</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>Uploading Files</h1>
+    <div class="lead">Uploading files directly to a storage provider</div>
+	       
+	<h2 id="structure">Structure</h2>
+<p>XREngine can host various types of files on a storage provider you control, such as an S3 bucket in AWS.
+Directly uploading files like this, as opposed to going through one of the conversion endpoints, will not alter the
+file in any way.</p>
+<h3 id="upload-path">Upload path</h3>
+<p>Each upload will have a UUID associated with the top-level resource, e.g. the main file that&rsquo;s being uploaded.
+In the storage provider, this file will be stored at <code>&lt;provider path&gt;/&lt;UUID&gt;/&lt;filetype&gt;/&lt;file.extension&gt;</code>
+For example, a video that was uploaded to S3 would be stored at
+<code>https://s3.amazonaws.com/&lt;bucket_name&gt;/&lt;UUID&gt;/video/example-video.mp4</code></p>
+<h3 id="thumbnails">Thumbnails</h3>
+<p>A thumbnail can be provided as a separate file when making a POST. The thumbnail will be
+located in the /image folder at <UUID of parent>/image and will be named whatever the name of the thumbnail file is.
+If the previous example video was uploaded with a thumbnail that was titled &lsquo;example-image.jpg&rsquo;, the video would be at
+<code>https://s3.amazonaws.com/&lt;bucket_name&gt;/&lt;video UUID&gt;/video/example-video.mp4</code>
+and the thumbnail would be at
+<code>https://s3.amazonaws.com/&lt;bucket_name&gt;/&lt;video UUID&gt;/image/example-image.jpg</code>
+If the main file was an image, both it and its thumbnail would be in /image</p>
+<h2 id="api">API</h2>
+<p>The path for uploading files is /upload. All of the files generated from this process are of type
+&lsquo;static-resource&rsquo;, so to retrieve/update/delete the resulting files, one will need to interact with them through the
+/static-resource endpoint.</p>
+<h3 id="uploading-a-file-and-optionally-a-thumbnail">Uploading a file (and optionally a thumbnail)</h3>
+<p><code>POST /upload</code></p>
+<p>A multipart/form-data body will contain a buffer of the file contents, an optional string for &lsquo;name&rsquo; and &lsquo;description&rsquo;,
+and optionally another buffer of the thumbnail contents.</p>
+<h4 id="fields">Fields</h4>
+<h5 id="file-bufferrequired">file (buffer)[required]</h5>
+<p>A buffer of the file contents. In a browser, it&rsquo;s easiest to have an input field of type &lsquo;file&rsquo;, then make a new
+instance of FormData() and then do formdata.append(&lsquo;file&rsquo;, <file instance from input field>). Finally, POST this
+instance of FormData to /upload with the header &lsquo;Content-Type: multipart/form-data&rsquo;</p>
+<h5 id="name-stringrequired">name (string)[required]</h5>
+<p>The name of the file.</p>
+<h5 id="description-string">description (string)</h5>
+<p>A description of the file</p>
+<h6 id="thumbnail-buffer">thumbnail (buffer)</h6>
+<p>A buffer of the thumbnail file contents. See above under &lsquo;file&rsquo; for a quick overview on how to append this file
+to the FormData</p>
+<p>This endpoint does NOT do multi-posts.</p>
+<h3 id="get-uploaded-file">Get Uploaded File</h3>
+<p><code>GET /static-resource/&lt;UUID&gt;</code></p>
+<p>The database entries created from uploading a file are all &lsquo;static-resources&rsquo;. You cannot do a GET on /upload, but
+instead must interact with the API using the /static-resource endpoint.</p>
+<h4 id="fields-1">Fields</h4>
+<p>The following static-resource fields will be returned:</p>
+<h5 id="id-string">id (string)</h5>
+<p>The UUID of the static-resource.</p>
+<h5 id="name-string">name (string)</h5>
+<p>The name of the file.</p>
+<h5 id="description-string-1">description (string)</h5>
+<p>A description of the file.</p>
+<h5 id="url-string">url (string)</h5>
+<p>The URL of the file in XREngine&rsquo;s storage cache.</p>
+<h5 id="mime_type-string">mime_type (string)</h5>
+<p>The mime_type of the file.</p>
+<h5 id="metadata-string">metadata (string)</h5>
+<p>This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&rsquo;re using,
+to get the metadata object.</p>
+<h5 id="createdat-string">createdAt (string)</h5>
+<p>The datetime at which the static-resource was created.</p>
+<h5 id="updatedat-string">updatedAt (string)</h5>
+<p>The datetime at which the static-resource was last modified.</p>
+<h5 id="type-string">type (string)</h5>
+<p>The general type of the object to which the static-resource refers.</p>
+<h5 id="attributionid-string">attributionId (string)</h5>
+<p>The UUID of the attribution of this file. Will be null if no &lsquo;creator&rsquo; was passed during creation.</p>
+<h5 id="userid-string">userId (string)</h5>
+<p>The UUID of the User that owns this cached file.</p>
+<h5 id="parentresourceid-string">parentResourceId (string)</h5>
+<p>The UUID of the parent static-resource</p>
+<h5 id="attribution-object">attribution (object)</h5>
+<p>The associated attribution for the file. Will be null if no &lsquo;creator&rsquo; was passed during creation.</p>
+<h3 id="patch-uploaded-file">Patch Uploaded File</h3>
+<p><code>PATCH /static-resource/&lt;UUID&gt;</code></p>
+<p>The database entries created from uploading a file are all &lsquo;static-resources&rsquo;. You cannot do a PATCH on /upload, but
+instead must interact with the API using the /static-resource endpoint.</p>
+<p>To update specific fields on a static-resource, make a PATCH to /static-resource/<the UUID of the resource>. As this is
+a PATCH, you only need to include the fields you want to change. Patches to a resource will not propagate to its
+children.</p>
+<p><strong>NOTE ON PATCHING METADATA</strong>
+The metadata field is stored in SQL as a JSON field, meaning as stringified JSON. If you are patching a subfield in
+there, you should make sure to set every subfield that is remaining the same, as well.</p>
+<p>If you wanted to change the thumbnail_url subfield in</p>
+<pre><code>{
+    &quot;metadata&quot;: {
+       &quot;thumbnail_url&quot;: &quot;https://some-url.com/image.jpg&quot;,
+       &quot;rating&quot;: &quot;All&quot;
+    }
+}
+</code></pre><p>you should send the following body</p>
+<pre><code>{
+     &quot;metadata&quot;: {
+        &quot;thumbnail_url&quot;: &quot;https://some-new-url.com/image.png&quot;,
+        &quot;rating&quot;: &quot;All&quot;
+     }
+}
+</code></pre><p>and NOT</p>
+<pre><code>{
+     &quot;metadata&quot;: {
+        &quot;thumbnail_url&quot;: &quot;https://this-is-incorrect.com/image.png&quot;
+     }
+}
+</code></pre><p>The latter would result in the loss of the &lsquo;rating&rsquo; subfield (and any other subfields that weren&rsquo;t explicitly defined).</p>
+<h4 id="fields-2">Fields</h4>
+<p>The following static-resource fields will be returned:</p>
+<h5 id="id-string-1">id (string)</h5>
+<p>The UUID of the static-resource.</p>
+<h5 id="name-string-1">name (string)</h5>
+<p>The name of the file.</p>
+<h5 id="description-string-2">description (string)</h5>
+<p>A description of the file.</p>
+<h5 id="url-string-1">url (string)</h5>
+<p>The URL of the file in XREngine&rsquo;s storage cache.</p>
+<h5 id="mime_type-string-1">mime_type (string)</h5>
+<p>The mime_type of the file.</p>
+<h5 id="metadata-string-1">metadata (string)</h5>
+<p>This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&rsquo;re using,
+to get the metadata object.</p>
+<h5 id="createdat-string-1">createdAt (string)</h5>
+<p>The datetime at which the static-resource was created.</p>
+<h5 id="updatedat-string-1">updatedAt (string)</h5>
+<p>The datetime at which the static-resource was last modified.</p>
+<h5 id="type-string-1">type (string)</h5>
+<p>The general type of the object to which the static-resource refers.</p>
+<h5 id="attributionid-string-1">attributionId (string)</h5>
+<p>The UUID of the attribution of this file. Will be null if no &lsquo;creator&rsquo; was passed during creation.</p>
+<h5 id="userid-string-1">userId (string)</h5>
+<p>The UUID of the User that owns this cached file.</p>
+<h5 id="parentresourceid-string-1">parentResourceId (string)</h5>
+<p>The UUID of the parent static-resource</p>
+<h5 id="attribution-object-1">attribution (object)</h5>
+<p>The associated attribution for the file. Will be null if no &lsquo;creator&rsquo; was passed during creation.</p>
+<h3 id="put-uploaded-file">Put Uploaded File</h3>
+<p><code>PUT /static-resource/&lt;UUID&gt;</code></p>
+<p>The database entries created from uploading a file are all &lsquo;static-resources&rsquo;. You cannot do a PUT on /upload, but
+instead must interact with the API using the /static-resource endpoint.</p>
+<p>To update the entirety of a static-resource, make a PUT to /static-resource/<the UUID of the resource>. Puts to a
+resource will not propagate to its children.</p>
+<h4 id="fields-3">Fields</h4>
+<p>The following static-resource fields will be returned:</p>
+<h5 id="id-string-2">id (string)</h5>
+<p>The UUID of the static-resource.</p>
+<h5 id="name-string-2">name (string)</h5>
+<p>The name of the file.</p>
+<h5 id="description-string-3">description (string)</h5>
+<p>A description of the file.</p>
+<h5 id="url-string-2">url (string)</h5>
+<p>The URL of the file in XREngine&rsquo;s storage cache.</p>
+<h5 id="mime_type-string-2">mime_type (string)</h5>
+<p>The mime_type of the file.</p>
+<h5 id="metadata-string-2">metadata (string)</h5>
+<p>This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&rsquo;re using,
+to get the metadata object.</p>
+<h5 id="createdat-string-2">createdAt (string)</h5>
+<p>The datetime at which the static-resource was created.</p>
+<h5 id="updatedat-string-2">updatedAt (string)</h5>
+<p>The datetime at which the static-resource was last modified.</p>
+<h5 id="type-string-2">type (string)</h5>
+<p>The general type of the object to which the static-resource refers.</p>
+<h5 id="attributionid-string-2">attributionId (string)</h5>
+<p>The UUID of the attribution of this file. Will be null if no &lsquo;creator&rsquo; was passed during creation.</p>
+<h5 id="userid-string-2">userId (string)</h5>
+<p>The UUID of the User that owns this cached file.</p>
+<h5 id="parentresourceid-string-2">parentResourceId (string)</h5>
+<p>The UUID of the parent static-resource</p>
+<h5 id="attribution-object-2">attribution (object)</h5>
+<p>The associated attribution for the file. Will be null if no &lsquo;creator&rsquo; was passed during creation.</p>
+<h3 id="delete-uploaded-file">Delete Uploaded File</h3>
+<p><code>DELETE /static-resource/&lt;UUID&gt;</code></p>
+<p>The database entries created from uploading a file are all &lsquo;static-resources&rsquo;. You cannot do a DELETE on /upload, but
+instead must interact with the API using the /static-resource endpoint.</p>
+<p>To delete a static-resource, make a DELETE to /static-resource/<the UUID of the resource>. All children of that
+resource will be deleted, as will the cached file referenced in the &lsquo;url&rsquo; field. This means that deleting a file that
+has a thumbnail will delete the thumbnail as well.</p>
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified January 5, 2017
+</div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" href="https://github.com/xr3ngine/xrengine">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Discord" aria-label="Discord">
+    <a class="text-white" target="_blank" href="https://discord.gg/A4XCDpN">
+      <i class="fab fa-discord"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 XREngine All Rights Reserved</small>
+        
+	
+		<p class="mt-2"><a href="/about/">About XREngine</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script src="/js/main.min.29b0315468c00226fa6f4556a9cebc0ac4fe1ce1457a01b22c0a06b329877383.js" integrity="sha256-KbAxVGjAAib6b0VWqc68CsT&#43;HOFFegGyLAoGsymHc4M=" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>

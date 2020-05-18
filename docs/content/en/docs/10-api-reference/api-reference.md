@@ -7,13 +7,13 @@ description: >
 ---
 
 {{% pageinfo %}}
-API Reference for XRChat
+API Reference for XREngine
 {{% /pageinfo %}}
-XRChat has a flexible typing system, so that new types can be added and automatically seeded into the database.
+XREngine has a flexible typing system, so that new types can be added and automatically seeded into the database.
 
 Following the standardized patterns of Feathersjs and Rails-style MVCs in general, all of our low level APIs are available to admins to List and CRUD manually. We wrap these low-level APIs with high-level APIs to manage lots of complexity in a single endpoint -- for example, the /upload endpoint will manage creating resources (a video and thumbnail subresource), relate them together and assign ownership, attribution and license properties.
 
-XRChat tries to reflect the entity component system on the frontend inside of the database. We have four base objects:
+XREngine tries to reflect the entity component system on the frontend inside of the database. We have four base objects:
 
 ## Low level object APIs
 

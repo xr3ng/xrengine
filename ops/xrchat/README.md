@@ -1,6 +1,6 @@
-# XRChat
+# XREngine
 
-[XRChat](https://myxr.social/) Social Gatherings on the Web.
+[XREngine](https://myxr.social/) Social Gatherings on the Web.
 
 ## TL;DR;
 
@@ -39,7 +39,7 @@ $ helm repo update
 $ helm install my-release xrengine/xrengine            # Helm 3
 $ helm install --name my-release xrengine/xrengine     # Helm 2
 ```
-XRChat
+XREngine
 The command deploys XRchat on the Kubernetes cluster in the default configuration. The [configuration](#configuration) section lists the parameters that can be configured during installation.
 
 > **Tip**: List all releases using `helm list`
@@ -56,7 +56,7 @@ The command removes all the Kubernetes components associated with the chart and 
 
 ## Configuration
 
-The following table lists the configurable parameters of the XRChat chart and their default values.
+The following table lists the configurable parameters of the XREngine chart and their default values.
 
 Dependent charts can also have values overwritten. Preface values with mariadb.* or agones.*
 

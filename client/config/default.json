@@ -1,6 +1,6 @@
 {
   "publicRuntimeConfig": {
-    "title": "XRChat",
+    "title": "XREngine",
     "dev": false,
     "loginDisabled": false,
     "logo": "",
@@ -91,9 +91,9 @@
     },
     "server_address": "localhost:3030",
     "apiServer": "http://localhost:3030",
-    "siteTitle": "XRChat",
+    "siteTitle": "XREngine",
     "siteDescription": "Connected Worlds for Everyone",
-    "featherStoreKey": "XRChat-Auth-Store",
+    "featherStoreKey": "XREngine-Auth-Store",
     "localStorageKey": "xrengine-client-store-key-v1",
     "auth": {
       "enableSmsMagicLink": true,

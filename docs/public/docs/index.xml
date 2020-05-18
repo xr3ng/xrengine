@@ -1,0 +1,1375 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>XREngine – Documentation</title>
+    <link>/docs/</link>
+    <description>Recent content in Documentation on XREngine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Example Page</title>
+      <link>/docs/01-getting-started/example-page/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/01-getting-started/example-page/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;This is a placeholder page. Replace it with your own content.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Text can be &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, or &lt;del&gt;strikethrough&lt;/del&gt;. &lt;a href=&#34;https://gohugo.io&#34;&gt;Links&lt;/a&gt; should be blue with no underlines (unless hovered over).&lt;/p&gt;
+&lt;p&gt;There should be whitespace between paragraphs. Vape migas chillwave sriracha poutine try-hard distillery. Tattooed shabby chic small batch, pabst art party heirloom letterpress air plant pop-up. Sustainable chia skateboard art party banjo cardigan normcore affogato vexillologist quinoa meggings man bun master cleanse shoreditch readymade. Yuccie prism four dollar toast tbh cardigan iPhone, tumblr listicle live-edge VHS. Pug lyft normcore hot chicken biodiesel, actually keffiyeh thundercats photo booth pour-over twee fam food truck microdosing banh mi. Vice activated charcoal raclette unicorn live-edge post-ironic. Heirloom vexillologist coloring book, beard deep v letterpress echo park humblebrag tilde.&lt;/p&gt;
+&lt;p&gt;90&amp;rsquo;s four loko seitan photo booth gochujang freegan tumeric listicle fam ugh humblebrag. Bespoke leggings gastropub, biodiesel brunch pug fashion axe meh swag art party neutra deep v chia. Enamel pin fanny pack knausgaard tofu, artisan cronut hammock meditation occupy master cleanse chartreuse lumbersexual. Kombucha kogi viral truffaut synth distillery single-origin coffee ugh slow-carb marfa selfies. Pitchfork schlitz semiotics fanny pack, ugh artisan vegan vaporware hexagon. Polaroid fixie post-ironic venmo wolf ramps &lt;strong&gt;kale chips&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There should be no margin above this first sentence.&lt;/p&gt;
+&lt;p&gt;Blockquotes should be a lighter gray with a border along the left side in the secondary color.&lt;/p&gt;
+&lt;p&gt;There should be no margin below this final sentence.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;first-header-2&#34;&gt;First Header 2&lt;/h2&gt;
+&lt;p&gt;This is a normal paragraph following a header. Knausgaard kale chips snackwave microdosing cronut copper mug swag synth bitters letterpress glossier &lt;strong&gt;craft beer&lt;/strong&gt;. Mumblecore bushwick authentic gochujang vegan chambray meditation jean shorts irony. Viral farm-to-table kale chips, pork belly palo santo distillery activated charcoal aesthetic jianbing air plant woke lomo VHS organic. Tattooed locavore succulents heirloom, small batch sriracha echo park DIY af. Shaman you probably haven&amp;rsquo;t heard of them copper mug, crucifix green juice vape &lt;em&gt;single-origin coffee&lt;/em&gt; brunch actually. Mustache etsy vexillologist raclette authentic fam. Tousled beard humblebrag asymmetrical. I love turkey, I love my job, I love my friends, I love Chardonnay!&lt;/p&gt;
+&lt;p&gt;Deae legum paulatimque terra, non vos mutata tacet: dic. Vocant docuique me plumas fila quin afuerunt copia haec o neque.&lt;/p&gt;
+&lt;p&gt;On big screens, paragraphs and headings should not take up the full container width, but we want tables, code blocks and similar to take the full width.&lt;/p&gt;
+&lt;p&gt;Scenester tumeric pickled, authentic crucifix post-ironic fam freegan VHS pork belly 8-bit yuccie PBR&amp;amp;B. &lt;strong&gt;I love this life we live in&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;second-header-2&#34;&gt;Second Header 2&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote following a header. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;header-3&#34;&gt;Header 3&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;This is a code block following a header.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Next level leggings before they sold out, PBR&amp;amp;B church-key shaman echo park. Kale chips occupy godard whatever pop-up freegan pork belly selfies. Gastropub Belinda subway tile woke post-ironic seitan. Shabby chic man bun semiotics vape, chia messenger bag plaid cardigan.&lt;/p&gt;
+&lt;h4 id=&#34;header-4&#34;&gt;Header 4&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;This is an unordered list following a header.&lt;/li&gt;
+&lt;li&gt;This is an unordered list following a header.&lt;/li&gt;
+&lt;li&gt;This is an unordered list following a header.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;header-5&#34;&gt;Header 5&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;This is an ordered list following a header.&lt;/li&gt;
+&lt;li&gt;This is an ordered list following a header.&lt;/li&gt;
+&lt;li&gt;This is an ordered list following a header.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;header-6&#34;&gt;Header 6&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;What&lt;/th&gt;
+&lt;th&gt;Follows&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A table&lt;/td&gt;
+&lt;td&gt;A header&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A table&lt;/td&gt;
+&lt;td&gt;A header&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A table&lt;/td&gt;
+&lt;td&gt;A header&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;There&amp;rsquo;s a horizontal rule above and below this.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Here is an unordered list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Liverpool F.C.&lt;/li&gt;
+&lt;li&gt;Chelsea F.C.&lt;/li&gt;
+&lt;li&gt;Manchester United F.C.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And an ordered list:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Michael Brecker&lt;/li&gt;
+&lt;li&gt;Seamus Blake&lt;/li&gt;
+&lt;li&gt;Branford Marsalis&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And an unordered task list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Create a Hugo theme&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Add task lists to it&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Take a vacation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And a &amp;ldquo;mixed&amp;rdquo; task list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Pack bags&lt;/li&gt;
+&lt;li&gt;?&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Travel!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And a nested list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jackson 5
+&lt;ul&gt;
+&lt;li&gt;Michael&lt;/li&gt;
+&lt;li&gt;Tito&lt;/li&gt;
+&lt;li&gt;Jackie&lt;/li&gt;
+&lt;li&gt;Marlon&lt;/li&gt;
+&lt;li&gt;Jermaine&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TMNT
+&lt;ul&gt;
+&lt;li&gt;Leonardo&lt;/li&gt;
+&lt;li&gt;Michelangelo&lt;/li&gt;
+&lt;li&gt;Donatello&lt;/li&gt;
+&lt;li&gt;Raphael&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Definition lists can be used with Markdown syntax. Definition headers are bold.&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;Name&lt;/dt&gt;
+&lt;dd&gt;Godzilla&lt;/dd&gt;
+&lt;dt&gt;Born&lt;/dt&gt;
+&lt;dd&gt;1952&lt;/dd&gt;
+&lt;dt&gt;Birthplace&lt;/dt&gt;
+&lt;dd&gt;Japan&lt;/dd&gt;
+&lt;dt&gt;Color&lt;/dt&gt;
+&lt;dd&gt;Green&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;hr&gt;
+&lt;p&gt;Tables should have bold headings and alternating shaded rows.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Artist&lt;/th&gt;
+&lt;th&gt;Album&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Michael Jackson&lt;/td&gt;
+&lt;td&gt;Thriller&lt;/td&gt;
+&lt;td&gt;1982&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Prince&lt;/td&gt;
+&lt;td&gt;Purple Rain&lt;/td&gt;
+&lt;td&gt;1984&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Beastie Boys&lt;/td&gt;
+&lt;td&gt;License to Ill&lt;/td&gt;
+&lt;td&gt;1986&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;If a table is too wide, it should scroll horizontally.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Artist&lt;/th&gt;
+&lt;th&gt;Album&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Label&lt;/th&gt;
+&lt;th&gt;Awards&lt;/th&gt;
+&lt;th&gt;Songs&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Michael Jackson&lt;/td&gt;
+&lt;td&gt;Thriller&lt;/td&gt;
+&lt;td&gt;1982&lt;/td&gt;
+&lt;td&gt;Epic Records&lt;/td&gt;
+&lt;td&gt;Grammy Award for Album of the Year, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;amp;B Album, Brit Award for Best Selling Album, Grammy Award for Best Engineered Album, Non-Classical&lt;/td&gt;
+&lt;td&gt;Wanna Be Startin&amp;rsquo; Somethin&amp;rsquo;, Baby Be Mine, The Girl Is Mine, Thriller, Beat It, Billie Jean, Human Nature, P.Y.T. (Pretty Young Thing), The Lady in My Life&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Prince&lt;/td&gt;
+&lt;td&gt;Purple Rain&lt;/td&gt;
+&lt;td&gt;1984&lt;/td&gt;
+&lt;td&gt;Warner Brothers Records&lt;/td&gt;
+&lt;td&gt;Grammy Award for Best Score Soundtrack for Visual Media, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;amp;B Album, Brit Award for Best Soundtrack/Cast Recording, Grammy Award for Best Rock Performance by a Duo or Group with Vocal&lt;/td&gt;
+&lt;td&gt;Let&amp;rsquo;s Go Crazy, Take Me With U, The Beautiful Ones, Computer Blue, Darling Nikki, When Doves Cry, I Would Die 4 U, Baby I&amp;rsquo;m a Star, Purple Rain&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Beastie Boys&lt;/td&gt;
+&lt;td&gt;License to Ill&lt;/td&gt;
+&lt;td&gt;1986&lt;/td&gt;
+&lt;td&gt;Mercury Records&lt;/td&gt;
+&lt;td&gt;noawardsbutthistablecelliswide&lt;/td&gt;
+&lt;td&gt;Rhymin &amp;amp; Stealin, The New Style, She&amp;rsquo;s Crafty, Posse in Effect, Slow Ride, Girls, (You Gotta) Fight for Your Right, No Sleep Till Brooklyn, Paul Revere, Hold It Now, Hit It, Brass Monkey, Slow and Low, Time to Get Ill&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;Code snippets like &lt;code&gt;var foo = &amp;quot;bar&amp;quot;;&lt;/code&gt; can be shown inline.&lt;/p&gt;
+&lt;p&gt;Also, &lt;code&gt;this should vertically align&lt;/code&gt; &lt;del&gt;&lt;code&gt;with this&lt;/code&gt;&lt;/del&gt; &lt;del&gt;and this&lt;/del&gt;.&lt;/p&gt;
+&lt;p&gt;Code can also be shown in a block element.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;foo := &amp;quot;bar&amp;quot;;
+bar := &amp;quot;foo&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Code can also use syntax highlighting.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;`var foo = &amp;#34;bar&amp;#34;;`&lt;/span&gt;
+
+  &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;javascript&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;_&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Tokenise&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;nil&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;New&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;WithLineNumbers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
+
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;bytes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Buffer&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Format&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+  &lt;span style=&#34;color:#000&#34;&gt;fmt&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Println&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Inline code inside table cells should still be distinguishable.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Language&lt;/th&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Javascript&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;var foo = &amp;quot;bar&amp;quot;;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ruby&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;foo = &amp;quot;bar&amp;quot;{&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;Small images should be shown at their actual size.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Large images should always scale down and fit in the content container.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/1024px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;
+&lt;h3 id=&#34;alerts&#34;&gt;Alerts&lt;/h3&gt;
+&lt;p&gt;
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+This is an alert.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+This is an alert with a title.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+This is an alert with a title and &lt;strong&gt;Markdown&lt;/strong&gt;.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+
+This is a successful alert.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+This is a warning.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
+This is a warning with a title.
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;another-heading&#34;&gt;Another Heading&lt;/h2&gt;
+&lt;p&gt;Add some sections here to see how the ToC looks like. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.&lt;/p&gt;
+&lt;h3 id=&#34;this-document&#34;&gt;This Document&lt;/h3&gt;
+&lt;p&gt;Inguina genus: Anaphen post: lingua violente voce suae meus aetate diversi. Orbis unam nec flammaeque status deam Silenum erat et a ferrea. Excitus rigidum ait: vestro et Herculis convicia: nitidae deseruit coniuge Proteaque adiciam &lt;em&gt;eripitur&lt;/em&gt;? Sitim noceat signa &lt;em&gt;probat quidem&lt;/em&gt;. Sua longis &lt;em&gt;fugatis&lt;/em&gt; quidem genae.&lt;/p&gt;
+&lt;h3 id=&#34;pixel-count&#34;&gt;Pixel Count&lt;/h3&gt;
+&lt;p&gt;Tilde photo booth wayfarers cliche lomo intelligentsia man braid kombucha vaporware farm-to-table mixtape portland. PBR&amp;amp;B pickled cornhole ugh try-hard ethical subway tile. Fixie paleo intelligentsia pabst. Ennui waistcoat vinyl gochujang. Poutine salvia authentic affogato, chambray lumbersexual shabby chic.&lt;/p&gt;
+&lt;h3 id=&#34;contact-info&#34;&gt;Contact Info&lt;/h3&gt;
+&lt;p&gt;Plaid hell of cred microdosing, succulents tilde pour-over. Offal shabby chic 3 wolf moon blue bottle raw denim normcore poutine pork belly.&lt;/p&gt;
+&lt;h3 id=&#34;external-links&#34;&gt;External Links&lt;/h3&gt;
+&lt;p&gt;Stumptown PBR&amp;amp;B keytar plaid street art, forage XOXO pitchfork selvage affogato green juice listicle pickled everyday carry hashtag. Organic sustainable letterpress sartorial scenester intelligentsia swag bushwick. Put a bird on it stumptown neutra locavore. IPhone typewriter messenger bag narwhal. Ennui cold-pressed seitan flannel keytar, single-origin coffee adaptogen occupy yuccie williamsburg chillwave shoreditch forage waistcoat.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;This is the final element on the page and there should be no margin below this.
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Parameter Reference</title>
+      <link>/docs/10-api-reference/api-reference/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/10-api-reference/api-reference/</guid>
+      <description>
+        
+        
+        &lt;p&gt;
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;API Reference for XREngine&lt;/p&gt;
+
+&lt;/div&gt;
+
+XREngine has a flexible typing system, so that new types can be added and automatically seeded into the database.&lt;/p&gt;
+&lt;p&gt;Following the standardized patterns of Feathersjs and Rails-style MVCs in general, all of our low level APIs are available to admins to List and CRUD manually. We wrap these low-level APIs with high-level APIs to manage lots of complexity in a single endpoint &amp;ndash; for example, the /upload endpoint will manage creating resources (a video and thumbnail subresource), relate them together and assign ownership, attribution and license properties.&lt;/p&gt;
+&lt;p&gt;XREngine tries to reflect the entity component system on the frontend inside of the database. We have four base objects:&lt;/p&gt;
+&lt;h2 id=&#34;low-level-object-apis&#34;&gt;Low level object APIs&lt;/h2&gt;
+&lt;h3 id=&#34;entity&#34;&gt;Entity&lt;/h3&gt;
+&lt;p&gt;This is a unique ID that serves as a key for relating components together. Entities have no functionality on their own, but gain functional aspects from attached components.&lt;/p&gt;
+&lt;p&gt;Entities have a default type of &amp;ldquo;default&amp;rdquo;, which means they have no inherited properties. For primitive types (an a-box in Aframe, for example) entities have a type relating to the primiting (in this case the type would be &amp;lsquo;box&amp;rsquo;)&lt;/p&gt;
+&lt;h3 id=&#34;component&#34;&gt;Component&lt;/h3&gt;
+&lt;p&gt;Components reflect Aframe standard or custom components. Components in the database store data statefully, and components are always associated with entities &amp;ndash; when an entity is destroyed, all components go along with it.&lt;/p&gt;
+&lt;h3 id=&#34;resource&#34;&gt;Resource&lt;/h3&gt;
+&lt;p&gt;Resources are referenced files &amp;ndash; a video, image, thumbnail, script, anycd ..
+thing that can be discovered at a URL&lt;/p&gt;
+&lt;h3 id=&#34;collection&#34;&gt;Collection&lt;/h3&gt;
+&lt;p&gt;Collections represent a logic grouping of entities. A &amp;ldquo;scene&amp;rdquo; is a collection of entities with the scene type. Collections can also contain information about attribution and licensing (for example, for a scene)&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Parameter Reference</title>
+      <link>/docs/10-api-reference/parameter-reference/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/10-api-reference/parameter-reference/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;This is a placeholder page. Replace it with your own content.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Text can be &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, or &lt;del&gt;strikethrough&lt;/del&gt;. &lt;a href=&#34;https://gohugo.io&#34;&gt;Links&lt;/a&gt; should be blue with no underlines (unless hovered over).&lt;/p&gt;
+&lt;p&gt;There should be whitespace between paragraphs. Vape migas chillwave sriracha poutine try-hard distillery. Tattooed shabby chic small batch, pabst art party heirloom letterpress air plant pop-up. Sustainable chia skateboard art party banjo cardigan normcore affogato vexillologist quinoa meggings man bun master cleanse shoreditch readymade. Yuccie prism four dollar toast tbh cardigan iPhone, tumblr listicle live-edge VHS. Pug lyft normcore hot chicken biodiesel, actually keffiyeh thundercats photo booth pour-over twee fam food truck microdosing banh mi. Vice activated charcoal raclette unicorn live-edge post-ironic. Heirloom vexillologist coloring book, beard deep v letterpress echo park humblebrag tilde.&lt;/p&gt;
+&lt;p&gt;90&amp;rsquo;s four loko seitan photo booth gochujang freegan tumeric listicle fam ugh humblebrag. Bespoke leggings gastropub, biodiesel brunch pug fashion axe meh swag art party neutra deep v chia. Enamel pin fanny pack knausgaard tofu, artisan cronut hammock meditation occupy master cleanse chartreuse lumbersexual. Kombucha kogi viral truffaut synth distillery single-origin coffee ugh slow-carb marfa selfies. Pitchfork schlitz semiotics fanny pack, ugh artisan vegan vaporware hexagon. Polaroid fixie post-ironic venmo wolf ramps &lt;strong&gt;kale chips&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There should be no margin above this first sentence.&lt;/p&gt;
+&lt;p&gt;Blockquotes should be a lighter gray with a border along the left side in the secondary color.&lt;/p&gt;
+&lt;p&gt;There should be no margin below this final sentence.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;first-header-2&#34;&gt;First Header 2&lt;/h2&gt;
+&lt;p&gt;This is a normal paragraph following a header. Knausgaard kale chips snackwave microdosing cronut copper mug swag synth bitters letterpress glossier &lt;strong&gt;craft beer&lt;/strong&gt;. Mumblecore bushwick authentic gochujang vegan chambray meditation jean shorts irony. Viral farm-to-table kale chips, pork belly palo santo distillery activated charcoal aesthetic jianbing air plant woke lomo VHS organic. Tattooed locavore succulents heirloom, small batch sriracha echo park DIY af. Shaman you probably haven&amp;rsquo;t heard of them copper mug, crucifix green juice vape &lt;em&gt;single-origin coffee&lt;/em&gt; brunch actually. Mustache etsy vexillologist raclette authentic fam. Tousled beard humblebrag asymmetrical. I love turkey, I love my job, I love my friends, I love Chardonnay!&lt;/p&gt;
+&lt;p&gt;Deae legum paulatimque terra, non vos mutata tacet: dic. Vocant docuique me plumas fila quin afuerunt copia haec o neque.&lt;/p&gt;
+&lt;p&gt;On big screens, paragraphs and headings should not take up the full container width, but we want tables, code blocks and similar to take the full width.&lt;/p&gt;
+&lt;p&gt;Scenester tumeric pickled, authentic crucifix post-ironic fam freegan VHS pork belly 8-bit yuccie PBR&amp;amp;B. &lt;strong&gt;I love this life we live in&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;second-header-2&#34;&gt;Second Header 2&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote following a header. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;header-3&#34;&gt;Header 3&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;This is a code block following a header.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Next level leggings before they sold out, PBR&amp;amp;B church-key shaman echo park. Kale chips occupy godard whatever pop-up freegan pork belly selfies. Gastropub Belinda subway tile woke post-ironic seitan. Shabby chic man bun semiotics vape, chia messenger bag plaid cardigan.&lt;/p&gt;
+&lt;h4 id=&#34;header-4&#34;&gt;Header 4&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;This is an unordered list following a header.&lt;/li&gt;
+&lt;li&gt;This is an unordered list following a header.&lt;/li&gt;
+&lt;li&gt;This is an unordered list following a header.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;header-5&#34;&gt;Header 5&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;This is an ordered list following a header.&lt;/li&gt;
+&lt;li&gt;This is an ordered list following a header.&lt;/li&gt;
+&lt;li&gt;This is an ordered list following a header.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;header-6&#34;&gt;Header 6&lt;/h6&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;What&lt;/th&gt;
+&lt;th&gt;Follows&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A table&lt;/td&gt;
+&lt;td&gt;A header&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A table&lt;/td&gt;
+&lt;td&gt;A header&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A table&lt;/td&gt;
+&lt;td&gt;A header&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;There&amp;rsquo;s a horizontal rule above and below this.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Here is an unordered list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Liverpool F.C.&lt;/li&gt;
+&lt;li&gt;Chelsea F.C.&lt;/li&gt;
+&lt;li&gt;Manchester United F.C.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And an ordered list:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Michael Brecker&lt;/li&gt;
+&lt;li&gt;Seamus Blake&lt;/li&gt;
+&lt;li&gt;Branford Marsalis&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And an unordered task list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Create a Hugo theme&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Add task lists to it&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Take a vacation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And a &amp;ldquo;mixed&amp;rdquo; task list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Pack bags&lt;/li&gt;
+&lt;li&gt;?&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Travel!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And a nested list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jackson 5
+&lt;ul&gt;
+&lt;li&gt;Michael&lt;/li&gt;
+&lt;li&gt;Tito&lt;/li&gt;
+&lt;li&gt;Jackie&lt;/li&gt;
+&lt;li&gt;Marlon&lt;/li&gt;
+&lt;li&gt;Jermaine&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TMNT
+&lt;ul&gt;
+&lt;li&gt;Leonardo&lt;/li&gt;
+&lt;li&gt;Michelangelo&lt;/li&gt;
+&lt;li&gt;Donatello&lt;/li&gt;
+&lt;li&gt;Raphael&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Definition lists can be used with Markdown syntax. Definition headers are bold.&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;Name&lt;/dt&gt;
+&lt;dd&gt;Godzilla&lt;/dd&gt;
+&lt;dt&gt;Born&lt;/dt&gt;
+&lt;dd&gt;1952&lt;/dd&gt;
+&lt;dt&gt;Birthplace&lt;/dt&gt;
+&lt;dd&gt;Japan&lt;/dd&gt;
+&lt;dt&gt;Color&lt;/dt&gt;
+&lt;dd&gt;Green&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;hr&gt;
+&lt;p&gt;Tables should have bold headings and alternating shaded rows.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Artist&lt;/th&gt;
+&lt;th&gt;Album&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Michael Jackson&lt;/td&gt;
+&lt;td&gt;Thriller&lt;/td&gt;
+&lt;td&gt;1982&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Prince&lt;/td&gt;
+&lt;td&gt;Purple Rain&lt;/td&gt;
+&lt;td&gt;1984&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Beastie Boys&lt;/td&gt;
+&lt;td&gt;License to Ill&lt;/td&gt;
+&lt;td&gt;1986&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;If a table is too wide, it should scroll horizontally.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Artist&lt;/th&gt;
+&lt;th&gt;Album&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Label&lt;/th&gt;
+&lt;th&gt;Awards&lt;/th&gt;
+&lt;th&gt;Songs&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Michael Jackson&lt;/td&gt;
+&lt;td&gt;Thriller&lt;/td&gt;
+&lt;td&gt;1982&lt;/td&gt;
+&lt;td&gt;Epic Records&lt;/td&gt;
+&lt;td&gt;Grammy Award for Album of the Year, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;amp;B Album, Brit Award for Best Selling Album, Grammy Award for Best Engineered Album, Non-Classical&lt;/td&gt;
+&lt;td&gt;Wanna Be Startin&amp;rsquo; Somethin&amp;rsquo;, Baby Be Mine, The Girl Is Mine, Thriller, Beat It, Billie Jean, Human Nature, P.Y.T. (Pretty Young Thing), The Lady in My Life&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Prince&lt;/td&gt;
+&lt;td&gt;Purple Rain&lt;/td&gt;
+&lt;td&gt;1984&lt;/td&gt;
+&lt;td&gt;Warner Brothers Records&lt;/td&gt;
+&lt;td&gt;Grammy Award for Best Score Soundtrack for Visual Media, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;amp;B Album, Brit Award for Best Soundtrack/Cast Recording, Grammy Award for Best Rock Performance by a Duo or Group with Vocal&lt;/td&gt;
+&lt;td&gt;Let&amp;rsquo;s Go Crazy, Take Me With U, The Beautiful Ones, Computer Blue, Darling Nikki, When Doves Cry, I Would Die 4 U, Baby I&amp;rsquo;m a Star, Purple Rain&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Beastie Boys&lt;/td&gt;
+&lt;td&gt;License to Ill&lt;/td&gt;
+&lt;td&gt;1986&lt;/td&gt;
+&lt;td&gt;Mercury Records&lt;/td&gt;
+&lt;td&gt;noawardsbutthistablecelliswide&lt;/td&gt;
+&lt;td&gt;Rhymin &amp;amp; Stealin, The New Style, She&amp;rsquo;s Crafty, Posse in Effect, Slow Ride, Girls, (You Gotta) Fight for Your Right, No Sleep Till Brooklyn, Paul Revere, Hold It Now, Hit It, Brass Monkey, Slow and Low, Time to Get Ill&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;Code snippets like &lt;code&gt;var foo = &amp;quot;bar&amp;quot;;&lt;/code&gt; can be shown inline.&lt;/p&gt;
+&lt;p&gt;Also, &lt;code&gt;this should vertically align&lt;/code&gt; &lt;del&gt;&lt;code&gt;with this&lt;/code&gt;&lt;/del&gt; &lt;del&gt;and this&lt;/del&gt;.&lt;/p&gt;
+&lt;p&gt;Code can also be shown in a block element.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;foo := &amp;quot;bar&amp;quot;;
+bar := &amp;quot;foo&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Code can also use syntax highlighting.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;`var foo = &amp;#34;bar&amp;#34;;`&lt;/span&gt;
+
+  &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;javascript&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;_&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lexer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Tokenise&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;nil&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;github&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;New&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;html&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;WithLineNumbers&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
+
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;bytes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Buffer&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;formatter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Format&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;iterator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+  &lt;span style=&#34;color:#000&#34;&gt;fmt&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Println&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;buff&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Inline code inside table cells should still be distinguishable.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Language&lt;/th&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Javascript&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;var foo = &amp;quot;bar&amp;quot;;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ruby&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;foo = &amp;quot;bar&amp;quot;{&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;Small images should be shown at their actual size.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Large images should always scale down and fit in the content container.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/1024px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;
+&lt;h3 id=&#34;alerts&#34;&gt;Alerts&lt;/h3&gt;
+&lt;p&gt;
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+
+This is an alert.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+This is an alert with a title.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+This is an alert with a title and &lt;strong&gt;Markdown&lt;/strong&gt;.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+
+This is a successful alert.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+This is a warning.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
+This is a warning with a title.
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;another-heading&#34;&gt;Another Heading&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Parameter Reference</title>
+      <link>/docs/10-api-reference/swagger/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/10-api-reference/swagger/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+Swagger
+&lt;/div&gt;
+
+&lt;p&gt;Swagger integration will go here (visit Docsy Swagger integration and add it!)&lt;/p&gt;
+&lt;p&gt;For now, you can view Swagger API docs by launching XREngine server and visiting localhost:3030/docs.html&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Parameter Reference</title>
+      <link>/docs/10-api-reference/type-reference/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/10-api-reference/type-reference/</guid>
+      <description>
+        
+        
+        &lt;p&gt;
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;API Type Reference for XREngine&lt;/p&gt;
+
+&lt;/div&gt;
+
+XREngine has a flexible typing system, so that new types can be added and automatically seeded into the database.&lt;/p&gt;
+&lt;h2 id=&#34;resource-types&#34;&gt;Resource Types&lt;/h2&gt;
+&lt;p&gt;Resources are references to anything that&amp;rsquo;s statically stored in our volume file storage (i.e S3)
+Resource types all us to filter queries and give us understanding in how to handle embedded metadata.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resource Types&lt;/strong&gt;
+thumbnail
+image
+video
+script
+model3d
+shader
+data&lt;/p&gt;
+&lt;h2 id=&#34;entity-type&#34;&gt;Entity Type&lt;/h2&gt;
+&lt;p&gt;Entities are default entity type unless assigned a specific type. An entity &amp;lsquo;type&amp;rsquo; allows an entity to appear as an Aframe primitive or custom high level entity type.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Entity Types&lt;/strong&gt;
+default &amp;ndash; empty entity, ready for components to be added
+grid &amp;ndash; custom entity for our grid display
+box
+camera
+circle
+cone
+cursor
+curvedimage
+cylinder
+dodecahedron
+gltf-model
+icosahedron
+image
+light
+link
+obj-model
+octahdreon
+plane
+ring
+sky
+sound
+sphere
+tetrahedron
+text
+torus-knot
+torus
+triangle
+video
+videosphere&lt;/p&gt;
+&lt;h2 id=&#34;collection-type&#34;&gt;Collection Type&lt;/h2&gt;
+&lt;p&gt;Collections define a related set of entities, e.g. a scene, shop inventory or 3D model composited from submodels&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Collection Types&lt;/strong&gt;
+default &amp;ndash; generic collection with no owner or attribution necessary
+scene
+inventory&lt;/p&gt;
+&lt;h2 id=&#34;component-type&#34;&gt;Component Type&lt;/h2&gt;
+&lt;p&gt;Components are modular aspects that can be added to entities to give the entity functionaly. Component types directly mirror Aframe components and allow us to query by type, entity or both.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Component Types&lt;/strong&gt;
+animation
+background
+camera
+cursor
+debug
+device-orientation-permission-ui
+embedded
+fog
+geometry
+gltf-model
+hand-controls
+keyboard-shortcuts
+laser-controls
+light
+line
+link
+loading-screen
+look-controls
+obj-model
+oculus-go-controls
+pool
+position
+raycaster
+renderer
+rotation
+scale
+screenshot
+shadow
+sound
+stats
+text
+tracked-controls
+visible
+vive-controls
+vive-focus-controls
+vr-mode-ui
+wasd-controls
+windows-motion-controls
+networked &amp;ndash; networked aframe
+grid &amp;ndash; custom grid display componentZ&lt;/p&gt;
+&lt;h2 id=&#34;relationship-type&#34;&gt;Relationship Type&lt;/h2&gt;
+&lt;p&gt;Relationships define how users are connected to each other
+&lt;strong&gt;Relationship Types&lt;/strong&gt;
+null &amp;ndash; users are not connected
+friend &amp;ndash; user has expressed interest in being friends with other user
+notfriend &amp;ndash; user has explicitly turned down friend request
+blocked &amp;ndash; user has decided to block the other user&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Uploading Files</title>
+      <link>/docs/10-api-reference/file-upload/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/10-api-reference/file-upload/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;structure&#34;&gt;Structure&lt;/h2&gt;
+&lt;p&gt;XREngine can host various types of files on a storage provider you control, such as an S3 bucket in AWS.
+Directly uploading files like this, as opposed to going through one of the conversion endpoints, will not alter the
+file in any way.&lt;/p&gt;
+&lt;h3 id=&#34;upload-path&#34;&gt;Upload path&lt;/h3&gt;
+&lt;p&gt;Each upload will have a UUID associated with the top-level resource, e.g. the main file that&amp;rsquo;s being uploaded.
+In the storage provider, this file will be stored at &lt;code&gt;&amp;lt;provider path&amp;gt;/&amp;lt;UUID&amp;gt;/&amp;lt;filetype&amp;gt;/&amp;lt;file.extension&amp;gt;&lt;/code&gt;
+For example, a video that was uploaded to S3 would be stored at
+&lt;code&gt;https://s3.amazonaws.com/&amp;lt;bucket_name&amp;gt;/&amp;lt;UUID&amp;gt;/video/example-video.mp4&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;thumbnails&#34;&gt;Thumbnails&lt;/h3&gt;
+&lt;p&gt;A thumbnail can be provided as a separate file when making a POST. The thumbnail will be
+located in the /image folder at &lt;UUID of parent&gt;/image and will be named whatever the name of the thumbnail file is.
+If the previous example video was uploaded with a thumbnail that was titled &amp;lsquo;example-image.jpg&amp;rsquo;, the video would be at
+&lt;code&gt;https://s3.amazonaws.com/&amp;lt;bucket_name&amp;gt;/&amp;lt;video UUID&amp;gt;/video/example-video.mp4&lt;/code&gt;
+and the thumbnail would be at
+&lt;code&gt;https://s3.amazonaws.com/&amp;lt;bucket_name&amp;gt;/&amp;lt;video UUID&amp;gt;/image/example-image.jpg&lt;/code&gt;
+If the main file was an image, both it and its thumbnail would be in /image&lt;/p&gt;
+&lt;h2 id=&#34;api&#34;&gt;API&lt;/h2&gt;
+&lt;p&gt;The path for uploading files is /upload. All of the files generated from this process are of type
+&amp;lsquo;static-resource&amp;rsquo;, so to retrieve/update/delete the resulting files, one will need to interact with them through the
+/static-resource endpoint.&lt;/p&gt;
+&lt;h3 id=&#34;uploading-a-file-and-optionally-a-thumbnail&#34;&gt;Uploading a file (and optionally a thumbnail)&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;POST /upload&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;A multipart/form-data body will contain a buffer of the file contents, an optional string for &amp;lsquo;name&amp;rsquo; and &amp;lsquo;description&amp;rsquo;,
+and optionally another buffer of the thumbnail contents.&lt;/p&gt;
+&lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
+&lt;h5 id=&#34;file-bufferrequired&#34;&gt;file (buffer)[required]&lt;/h5&gt;
+&lt;p&gt;A buffer of the file contents. In a browser, it&amp;rsquo;s easiest to have an input field of type &amp;lsquo;file&amp;rsquo;, then make a new
+instance of FormData() and then do formdata.append(&amp;lsquo;file&amp;rsquo;, &lt;file instance from input field&gt;). Finally, POST this
+instance of FormData to /upload with the header &amp;lsquo;Content-Type: multipart/form-data&amp;rsquo;&lt;/p&gt;
+&lt;h5 id=&#34;name-stringrequired&#34;&gt;name (string)[required]&lt;/h5&gt;
+&lt;p&gt;The name of the file.&lt;/p&gt;
+&lt;h5 id=&#34;description-string&#34;&gt;description (string)&lt;/h5&gt;
+&lt;p&gt;A description of the file&lt;/p&gt;
+&lt;h6 id=&#34;thumbnail-buffer&#34;&gt;thumbnail (buffer)&lt;/h6&gt;
+&lt;p&gt;A buffer of the thumbnail file contents. See above under &amp;lsquo;file&amp;rsquo; for a quick overview on how to append this file
+to the FormData&lt;/p&gt;
+&lt;p&gt;This endpoint does NOT do multi-posts.&lt;/p&gt;
+&lt;h3 id=&#34;get-uploaded-file&#34;&gt;Get Uploaded File&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;GET /static-resource/&amp;lt;UUID&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The database entries created from uploading a file are all &amp;lsquo;static-resources&amp;rsquo;. You cannot do a GET on /upload, but
+instead must interact with the API using the /static-resource endpoint.&lt;/p&gt;
+&lt;h4 id=&#34;fields-1&#34;&gt;Fields&lt;/h4&gt;
+&lt;p&gt;The following static-resource fields will be returned:&lt;/p&gt;
+&lt;h5 id=&#34;id-string&#34;&gt;id (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the static-resource.&lt;/p&gt;
+&lt;h5 id=&#34;name-string&#34;&gt;name (string)&lt;/h5&gt;
+&lt;p&gt;The name of the file.&lt;/p&gt;
+&lt;h5 id=&#34;description-string-1&#34;&gt;description (string)&lt;/h5&gt;
+&lt;p&gt;A description of the file.&lt;/p&gt;
+&lt;h5 id=&#34;url-string&#34;&gt;url (string)&lt;/h5&gt;
+&lt;p&gt;The URL of the file in XREngine&amp;rsquo;s storage cache.&lt;/p&gt;
+&lt;h5 id=&#34;mime_type-string&#34;&gt;mime_type (string)&lt;/h5&gt;
+&lt;p&gt;The mime_type of the file.&lt;/p&gt;
+&lt;h5 id=&#34;metadata-string&#34;&gt;metadata (string)&lt;/h5&gt;
+&lt;p&gt;This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&amp;rsquo;re using,
+to get the metadata object.&lt;/p&gt;
+&lt;h5 id=&#34;createdat-string&#34;&gt;createdAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was created.&lt;/p&gt;
+&lt;h5 id=&#34;updatedat-string&#34;&gt;updatedAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was last modified.&lt;/p&gt;
+&lt;h5 id=&#34;type-string&#34;&gt;type (string)&lt;/h5&gt;
+&lt;p&gt;The general type of the object to which the static-resource refers.&lt;/p&gt;
+&lt;h5 id=&#34;attributionid-string&#34;&gt;attributionId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the attribution of this file. Will be null if no &amp;lsquo;creator&amp;rsquo; was passed during creation.&lt;/p&gt;
+&lt;h5 id=&#34;userid-string&#34;&gt;userId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the User that owns this cached file.&lt;/p&gt;
+&lt;h5 id=&#34;parentresourceid-string&#34;&gt;parentResourceId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the parent static-resource&lt;/p&gt;
+&lt;h5 id=&#34;attribution-object&#34;&gt;attribution (object)&lt;/h5&gt;
+&lt;p&gt;The associated attribution for the file. Will be null if no &amp;lsquo;creator&amp;rsquo; was passed during creation.&lt;/p&gt;
+&lt;h3 id=&#34;patch-uploaded-file&#34;&gt;Patch Uploaded File&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;PATCH /static-resource/&amp;lt;UUID&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The database entries created from uploading a file are all &amp;lsquo;static-resources&amp;rsquo;. You cannot do a PATCH on /upload, but
+instead must interact with the API using the /static-resource endpoint.&lt;/p&gt;
+&lt;p&gt;To update specific fields on a static-resource, make a PATCH to /static-resource/&lt;the UUID of the resource&gt;. As this is
+a PATCH, you only need to include the fields you want to change. Patches to a resource will not propagate to its
+children.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE ON PATCHING METADATA&lt;/strong&gt;
+The metadata field is stored in SQL as a JSON field, meaning as stringified JSON. If you are patching a subfield in
+there, you should make sure to set every subfield that is remaining the same, as well.&lt;/p&gt;
+&lt;p&gt;If you wanted to change the thumbnail_url subfield in&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+    &amp;quot;metadata&amp;quot;: {
+       &amp;quot;thumbnail_url&amp;quot;: &amp;quot;https://some-url.com/image.jpg&amp;quot;,
+       &amp;quot;rating&amp;quot;: &amp;quot;All&amp;quot;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;you should send the following body&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+     &amp;quot;metadata&amp;quot;: {
+        &amp;quot;thumbnail_url&amp;quot;: &amp;quot;https://some-new-url.com/image.png&amp;quot;,
+        &amp;quot;rating&amp;quot;: &amp;quot;All&amp;quot;
+     }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and NOT&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+     &amp;quot;metadata&amp;quot;: {
+        &amp;quot;thumbnail_url&amp;quot;: &amp;quot;https://this-is-incorrect.com/image.png&amp;quot;
+     }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The latter would result in the loss of the &amp;lsquo;rating&amp;rsquo; subfield (and any other subfields that weren&amp;rsquo;t explicitly defined).&lt;/p&gt;
+&lt;h4 id=&#34;fields-2&#34;&gt;Fields&lt;/h4&gt;
+&lt;p&gt;The following static-resource fields will be returned:&lt;/p&gt;
+&lt;h5 id=&#34;id-string-1&#34;&gt;id (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the static-resource.&lt;/p&gt;
+&lt;h5 id=&#34;name-string-1&#34;&gt;name (string)&lt;/h5&gt;
+&lt;p&gt;The name of the file.&lt;/p&gt;
+&lt;h5 id=&#34;description-string-2&#34;&gt;description (string)&lt;/h5&gt;
+&lt;p&gt;A description of the file.&lt;/p&gt;
+&lt;h5 id=&#34;url-string-1&#34;&gt;url (string)&lt;/h5&gt;
+&lt;p&gt;The URL of the file in XREngine&amp;rsquo;s storage cache.&lt;/p&gt;
+&lt;h5 id=&#34;mime_type-string-1&#34;&gt;mime_type (string)&lt;/h5&gt;
+&lt;p&gt;The mime_type of the file.&lt;/p&gt;
+&lt;h5 id=&#34;metadata-string-1&#34;&gt;metadata (string)&lt;/h5&gt;
+&lt;p&gt;This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&amp;rsquo;re using,
+to get the metadata object.&lt;/p&gt;
+&lt;h5 id=&#34;createdat-string-1&#34;&gt;createdAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was created.&lt;/p&gt;
+&lt;h5 id=&#34;updatedat-string-1&#34;&gt;updatedAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was last modified.&lt;/p&gt;
+&lt;h5 id=&#34;type-string-1&#34;&gt;type (string)&lt;/h5&gt;
+&lt;p&gt;The general type of the object to which the static-resource refers.&lt;/p&gt;
+&lt;h5 id=&#34;attributionid-string-1&#34;&gt;attributionId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the attribution of this file. Will be null if no &amp;lsquo;creator&amp;rsquo; was passed during creation.&lt;/p&gt;
+&lt;h5 id=&#34;userid-string-1&#34;&gt;userId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the User that owns this cached file.&lt;/p&gt;
+&lt;h5 id=&#34;parentresourceid-string-1&#34;&gt;parentResourceId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the parent static-resource&lt;/p&gt;
+&lt;h5 id=&#34;attribution-object-1&#34;&gt;attribution (object)&lt;/h5&gt;
+&lt;p&gt;The associated attribution for the file. Will be null if no &amp;lsquo;creator&amp;rsquo; was passed during creation.&lt;/p&gt;
+&lt;h3 id=&#34;put-uploaded-file&#34;&gt;Put Uploaded File&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;PUT /static-resource/&amp;lt;UUID&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The database entries created from uploading a file are all &amp;lsquo;static-resources&amp;rsquo;. You cannot do a PUT on /upload, but
+instead must interact with the API using the /static-resource endpoint.&lt;/p&gt;
+&lt;p&gt;To update the entirety of a static-resource, make a PUT to /static-resource/&lt;the UUID of the resource&gt;. Puts to a
+resource will not propagate to its children.&lt;/p&gt;
+&lt;h4 id=&#34;fields-3&#34;&gt;Fields&lt;/h4&gt;
+&lt;p&gt;The following static-resource fields will be returned:&lt;/p&gt;
+&lt;h5 id=&#34;id-string-2&#34;&gt;id (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the static-resource.&lt;/p&gt;
+&lt;h5 id=&#34;name-string-2&#34;&gt;name (string)&lt;/h5&gt;
+&lt;p&gt;The name of the file.&lt;/p&gt;
+&lt;h5 id=&#34;description-string-3&#34;&gt;description (string)&lt;/h5&gt;
+&lt;p&gt;A description of the file.&lt;/p&gt;
+&lt;h5 id=&#34;url-string-2&#34;&gt;url (string)&lt;/h5&gt;
+&lt;p&gt;The URL of the file in XREngine&amp;rsquo;s storage cache.&lt;/p&gt;
+&lt;h5 id=&#34;mime_type-string-2&#34;&gt;mime_type (string)&lt;/h5&gt;
+&lt;p&gt;The mime_type of the file.&lt;/p&gt;
+&lt;h5 id=&#34;metadata-string-2&#34;&gt;metadata (string)&lt;/h5&gt;
+&lt;p&gt;This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&amp;rsquo;re using,
+to get the metadata object.&lt;/p&gt;
+&lt;h5 id=&#34;createdat-string-2&#34;&gt;createdAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was created.&lt;/p&gt;
+&lt;h5 id=&#34;updatedat-string-2&#34;&gt;updatedAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was last modified.&lt;/p&gt;
+&lt;h5 id=&#34;type-string-2&#34;&gt;type (string)&lt;/h5&gt;
+&lt;p&gt;The general type of the object to which the static-resource refers.&lt;/p&gt;
+&lt;h5 id=&#34;attributionid-string-2&#34;&gt;attributionId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the attribution of this file. Will be null if no &amp;lsquo;creator&amp;rsquo; was passed during creation.&lt;/p&gt;
+&lt;h5 id=&#34;userid-string-2&#34;&gt;userId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the User that owns this cached file.&lt;/p&gt;
+&lt;h5 id=&#34;parentresourceid-string-2&#34;&gt;parentResourceId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the parent static-resource&lt;/p&gt;
+&lt;h5 id=&#34;attribution-object-2&#34;&gt;attribution (object)&lt;/h5&gt;
+&lt;p&gt;The associated attribution for the file. Will be null if no &amp;lsquo;creator&amp;rsquo; was passed during creation.&lt;/p&gt;
+&lt;h3 id=&#34;delete-uploaded-file&#34;&gt;Delete Uploaded File&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;DELETE /static-resource/&amp;lt;UUID&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The database entries created from uploading a file are all &amp;lsquo;static-resources&amp;rsquo;. You cannot do a DELETE on /upload, but
+instead must interact with the API using the /static-resource endpoint.&lt;/p&gt;
+&lt;p&gt;To delete a static-resource, make a DELETE to /static-resource/&lt;the UUID of the resource&gt;. All children of that
+resource will be deleted, as will the cached file referenced in the &amp;lsquo;url&amp;rsquo; field. This means that deleting a file that
+has a thumbnail will delete the thumbnail as well.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Video Conversion and Caching</title>
+      <link>/docs/10-api-reference/video-caching/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/10-api-reference/video-caching/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;structure&#34;&gt;Structure&lt;/h2&gt;
+&lt;p&gt;XREngine can download and convert videos hosted on external sites into an easily-streamable DASH format and cache them
+on a storage provider you control, such as an S3 bucket in AWS.&lt;/p&gt;
+&lt;p&gt;The conversion endpoint will download the video, run it through ffmpeg to turn it into 1080p/s at a maximum bitrate of
+7 Mbps using the x264 codec, and then output a DASH manifest.mpd file pointing to related chunks of the video, as well
+as .m3u8 files for playing on Apple devices. These will all be stored in a folder in your storage provider.&lt;/p&gt;
+&lt;h3 id=&#34;public-videos&#34;&gt;Public Videos&lt;/h3&gt;
+&lt;p&gt;If the files are marked as publicly available (currently the default state), they will be stored in
+&lt;code&gt;&amp;lt;storage_provider_path&amp;gt;/public/&amp;lt;video_source_name&amp;gt;/&amp;lt;source_video_id&amp;gt;/video/&amp;lt;filename&amp;gt;&lt;/code&gt;. For example, if caching a
+video from Youtube whose URL is &lt;a href=&#34;https://www.youtube.com/watch?v=0XrH2WO1Mzs,&#34;&gt;https://www.youtube.com/watch?v=0XrH2WO1Mzs,&lt;/a&gt; the path for the manifest.mpd file would be
+&lt;code&gt;https://s3.amazonaws.com/&amp;lt;bucket_name&amp;gt;/public/youtube/0XrH2WO1Mzs/video/manifest.mpd&lt;/code&gt;; all of its associated files
+would be located alongside it in the /video folder.&lt;/p&gt;
+&lt;h3 id=&#34;private-videos&#34;&gt;Private Videos&lt;/h3&gt;
+&lt;p&gt;If the files are not public, the UUID identifying the manifest.mpd file will be used to encompass all of the generated
+files on the storage provider. The files will be located at &lt;code&gt;&amp;lt;UUID&amp;gt;/video/&amp;lt;filename&amp;gt;&lt;/code&gt;. For example, a cached
+non-public video&amp;rsquo;s manifest.mpd could be found at
+&lt;code&gt;https://s3.amazonaws.com/&amp;lt;bucket_name&amp;gt;/cebac911-8ef9-11ea-8abe-093e24568d56/video/manifest.mpd&lt;/code&gt;; all of its
+associated files would be located alongside it in the /video folder.&lt;/p&gt;
+&lt;h3 id=&#34;thumbnails&#34;&gt;Thumbnails&lt;/h3&gt;
+&lt;p&gt;A thumbnail can be provided via a URL when calling the API. If no URL is provided, then the conversion backend will
+obtain the default thumbnail from the provider source and use that instead. In either case, the thumbnail will be
+located in the /image folder alongside the /video folder, and will be titled &lt;code&gt;thumbnail.&amp;lt;extension&amp;gt;&lt;/code&gt;
+To use the public example above, if the manifest.mpd file is located at
+&lt;code&gt;https://s3.amazonaws.com/&amp;lt;bucket_name&amp;gt;/public/youtube/0XrH2WO1Mzs/video/manifest.mpd&lt;/code&gt;, the thumbnail would be at
+&lt;code&gt;https://s3.amazonaws.com/&amp;lt;bucket_name&amp;gt;/public/youtube/0XrH2WO1Mzs/image/thumbnail.jpg&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;attribution&#34;&gt;Attribution&lt;/h3&gt;
+&lt;p&gt;If the &amp;lsquo;creator&amp;rsquo; field is specified, an &amp;lsquo;attribution&amp;rsquo; entity will be created that is referenced by the database entry
+for the manifest.mpd file. The attribution will have the name specified in &amp;lsquo;creator&amp;rsquo; as well as the original URL of the
+video.&lt;/p&gt;
+&lt;h3 id=&#34;resulting-static-resources&#34;&gt;Resulting static-resources&lt;/h3&gt;
+&lt;p&gt;Many files will be generated from the conversion process. They will all be referenced in the database as a
+&amp;lsquo;static-resource&amp;rsquo;; a cached video may have several dozen associated static-resources.&lt;/p&gt;
+&lt;p&gt;The manifest.mpd file is the main point of entry. All other files generated will reference this static-resource as their
+parent; this is the only file that does not have a parent.
+This database entry will have the &lt;code&gt;mime_type&lt;/code&gt; &amp;lsquo;application/dash+xml&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;All of the .m4s chunks that manifest.mpd references will have the &lt;code&gt;mime_type&lt;/code&gt; &amp;lsquo;video/iso.segment&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;The .m3u8 files for Apple playback will have the &lt;code&gt;mime_type&lt;/code&gt; &amp;lsquo;application/x-mpegURL&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;All of the above file types will have the &lt;code&gt;type&lt;/code&gt; &amp;lsquo;video&amp;rsquo; to indicate that they are associated with video playback.&lt;/p&gt;
+&lt;p&gt;The thumbnail file will have whatever &lt;code&gt;mime_type&lt;/code&gt; the image is of, e.g. &amp;lsquo;image/jpg&amp;rsquo;, &amp;lsquo;image/png&amp;rsquo;, etc.
+Thumbnails will that the &lt;code&gt;type&lt;/code&gt; of &amp;lsquo;image&amp;rsquo;.&lt;/p&gt;
+&lt;h2 id=&#34;api&#34;&gt;API&lt;/h2&gt;
+&lt;p&gt;The path for creating cached videos is /video. All of the files generated from this process are of type
+&amp;lsquo;static-resource&amp;rsquo;, so to retrieve/update/delete the resulting files, one will need to interact with them through the
+/static-resource endpoint.&lt;/p&gt;
+&lt;h3 id=&#34;create-a-cached-video&#34;&gt;Create a Cached Video&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;POST /video&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;A JSON body will contain information about the video. This endpoint accepts arrays and can
+process multiple videos simultaneously.&lt;/p&gt;
+&lt;h4 id=&#34;fields&#34;&gt;Fields&lt;/h4&gt;
+&lt;h5 id=&#34;name-stringrequired&#34;&gt;name (string)[required]&lt;/h5&gt;
+&lt;p&gt;The name of the video.&lt;/p&gt;
+&lt;h5 id=&#34;url-stringrequired&#34;&gt;url (string)[required]&lt;/h5&gt;
+&lt;p&gt;The URL from which to download the video.&lt;/p&gt;
+&lt;h5 id=&#34;description-string&#34;&gt;description (string)&lt;/h5&gt;
+&lt;p&gt;A longer description of the video.&lt;/p&gt;
+&lt;h5 id=&#34;metadata-object&#34;&gt;metadata (object)&lt;/h5&gt;
+&lt;p&gt;Additional information about the video. None of the sub-fields are explicitly specified in the schema, but some that
+the front-end client can use are listed here:&lt;/p&gt;
+&lt;h6 id=&#34;thumbnail_url-string&#34;&gt;thumbnail_url (string)&lt;/h6&gt;
+&lt;p&gt;A URL from which to get and cache a thumbnail for this video. If not specified, a thumbnail will be retrieved from
+the video provider source.&lt;/p&gt;
+&lt;h6 id=&#34;rating-string&#34;&gt;rating (string)&lt;/h6&gt;
+&lt;p&gt;A content rating for the video, e.g. &amp;lsquo;All&amp;rsquo;, &amp;lsquo;Teen&amp;rsquo;,  &amp;lsquo;Youth&amp;rsquo;, etc. Does not have to follow any established rating system.&lt;/p&gt;
+&lt;h6 id=&#34;categories-arraystring&#34;&gt;categories (array[string])&lt;/h6&gt;
+&lt;p&gt;An array of categories associated with this video. Categories do not have to follow any established system.&lt;/p&gt;
+&lt;h6 id=&#34;runtime-string&#34;&gt;runtime (string)&lt;/h6&gt;
+&lt;p&gt;The length of the video in hours:minutes:seconds&lt;/p&gt;
+&lt;h5 id=&#34;creator-string&#34;&gt;creator (string)&lt;/h5&gt;
+&lt;p&gt;The person or entity that created/claims ownership over the video. An &amp;lsquo;attribution&amp;rsquo; entity will be created from this
+value.&lt;/p&gt;
+&lt;h3 id=&#34;example-post-body&#34;&gt;Example Post Body&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;[
+	{
+		&amp;quot;name&amp;quot;: &amp;quot;Example Video #1&amp;quot;,
+		&amp;quot;url&amp;quot;: &amp;quot;https://www.youtube.com/watch?v=AbCDefg&amp;quot;,
+		&amp;quot;description&amp;quot;: &amp;quot;Learn about examples in this thrilling video&amp;quot;,
+		&amp;quot;metadata&amp;quot;: {
+			&amp;quot;thumbnail_url&amp;quot;: &amp;quot;https://hosting-site.com/1234/image.png&amp;quot;,
+			&amp;quot;rating&amp;quot;: &amp;quot;Teen&amp;quot;,
+			&amp;quot;categories&amp;quot;: [
+				&amp;quot;Category 1&amp;quot;,
+				&amp;quot;Category C&amp;quot;
+			],
+			&amp;quot;runtime&amp;quot;: &amp;quot;3:45&amp;quot;
+		},
+		&amp;quot;creator&amp;quot;: &amp;quot;The Example Channel&amp;quot;
+	},
+	{
+		&amp;quot;name&amp;quot;: &amp;quot;Another Example&amp;quot;,
+		&amp;quot;url&amp;quot;: &amp;quot;https://www.youtube.com/watch?v=1j4_37bh&amp;quot;,
+		&amp;quot;description&amp;quot;: &amp;quot;Even more thrilling example footage&amp;quot;,
+		&amp;quot;metadata&amp;quot;: {
+			&amp;quot;rating&amp;quot;: &amp;quot;All&amp;quot;,
+			&amp;quot;categories&amp;quot;: [
+				&amp;quot;Category 1&amp;quot;
+			],
+			&amp;quot;runtime&amp;quot;: &amp;quot;5:08&amp;quot;
+		},
+		&amp;quot;creator&amp;quot;: &amp;quot;Steve Jones&amp;quot;
+	}
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As mentioned earlier, this endpoint can accept an array of JSON objects to do a multi-post. You can also pass it one
+JSON object at a time if you&amp;rsquo;d prefer; you do not have to post an array.&lt;/p&gt;
+&lt;h3 id=&#34;find-cached-videos&#34;&gt;Find Cached Videos&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;GET /static-resource&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;As mentioned in &amp;lsquo;Resulting static-resources&amp;rsquo;, the database entries created from caching a video are all
+&amp;lsquo;static-resources&amp;rsquo;. You cannot do a GET on /video, but instead must interact with the API using the /static-resource
+endpoint.&lt;/p&gt;
+&lt;p&gt;As mentioned earlier, the database entry for the manifest.mpd file is considered the master entry for the cached video.
+Adding the query &amp;lsquo;?mime_type=application/dash%2bxml&amp;rsquo; to all GETs will limit the results to just the important ones, e.g.
+&lt;code&gt;GET /static-resource?mime_type=application/dash%2bxml&lt;/code&gt; will retrieve all of the public manifest.mpd entries.&lt;/p&gt;
+&lt;h4 id=&#34;fields-1&#34;&gt;Fields&lt;/h4&gt;
+&lt;p&gt;The following static-resource fields will be returned:&lt;/p&gt;
+&lt;h5 id=&#34;id-string&#34;&gt;id (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the static-resource.&lt;/p&gt;
+&lt;h5 id=&#34;name-string&#34;&gt;name (string)&lt;/h5&gt;
+&lt;p&gt;The name of the video.&lt;/p&gt;
+&lt;h5 id=&#34;description-string-1&#34;&gt;description (string)&lt;/h5&gt;
+&lt;p&gt;A description of the video.&lt;/p&gt;
+&lt;h5 id=&#34;url-string&#34;&gt;url (string)&lt;/h5&gt;
+&lt;p&gt;The URL of the file in XREngine&amp;rsquo;s storage cache. This will NOT be the original URL of where the video was downloaded from.&lt;/p&gt;
+&lt;h5 id=&#34;mime_type-string&#34;&gt;mime_type (string)&lt;/h5&gt;
+&lt;p&gt;The mime_type of the file. For the manifest.mpd, this will be &amp;lsquo;application/dash+xml&amp;rsquo;. For the associated chunk .m4s
+files, this will be &amp;lsquo;video/iso.segment&amp;rsquo;. For the .m3u8 files, this will be &amp;lsquo;application/x-mpegURL&amp;rsquo;.&lt;/p&gt;
+&lt;h5 id=&#34;metadata-string&#34;&gt;metadata (string)&lt;/h5&gt;
+&lt;p&gt;This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&amp;rsquo;re using,
+to get the metadata object.&lt;/p&gt;
+&lt;h5 id=&#34;createdat-string&#34;&gt;createdAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was created.&lt;/p&gt;
+&lt;h5 id=&#34;updatedat-string&#34;&gt;updatedAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was last modified.&lt;/p&gt;
+&lt;h5 id=&#34;type-string&#34;&gt;type (string)&lt;/h5&gt;
+&lt;p&gt;The general type of the object to which the static-resource refers. For cached videos, this will be &amp;lsquo;video&amp;rsquo; regardless
+of the mime_type; the associated thumbnail will be of type &amp;lsquo;image&amp;rsquo;.&lt;/p&gt;
+&lt;h5 id=&#34;attributionid-string&#34;&gt;attributionId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the attribution of this video. Will be null if no &amp;lsquo;creator&amp;rsquo; was passed during creation.&lt;/p&gt;
+&lt;h5 id=&#34;userid-string&#34;&gt;userId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the User that owns this cached video. Will be null if it&amp;rsquo;s a public video.&lt;/p&gt;
+&lt;h5 id=&#34;parentresourceid-string&#34;&gt;parentResourceId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the parent static-resource represeting the manifest.mpd file for this cached video. Will be null for the
+manifest.mpd static-resource, as it is the &amp;lsquo;master&amp;rsquo; resource.&lt;/p&gt;
+&lt;h5 id=&#34;attribution-object&#34;&gt;attribution (object)&lt;/h5&gt;
+&lt;p&gt;The associated attribution for the video. Will be null if no &amp;lsquo;creator&amp;rsquo; was passed during creation.&lt;/p&gt;
+&lt;h3 id=&#34;get-a-single-cached-video&#34;&gt;Get a single Cached Video&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;GET /static-resource/&amp;lt;UUID&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;As mentioned in &amp;lsquo;Resulting static-resources&amp;rsquo;, the database entries created from caching a video are all
+&amp;lsquo;static-resources&amp;rsquo;. You cannot do a GET on /video/&lt;UUID&gt;, but instead must interact with the API using the
+/static-resource endpoint.&lt;/p&gt;
+&lt;h4 id=&#34;fields-2&#34;&gt;Fields&lt;/h4&gt;
+&lt;p&gt;The following static-resource fields will be returned:&lt;/p&gt;
+&lt;h5 id=&#34;id-string-1&#34;&gt;id (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the static-resource.&lt;/p&gt;
+&lt;h5 id=&#34;name-string-1&#34;&gt;name (string)&lt;/h5&gt;
+&lt;p&gt;The name of the video.&lt;/p&gt;
+&lt;h5 id=&#34;description-string-2&#34;&gt;description (string)&lt;/h5&gt;
+&lt;p&gt;A description of the video.&lt;/p&gt;
+&lt;h5 id=&#34;url-string-1&#34;&gt;url (string)&lt;/h5&gt;
+&lt;p&gt;The URL of the file in XREngine&amp;rsquo;s storage cache. This will NOT be the original URL of where the video was downloaded from.&lt;/p&gt;
+&lt;h5 id=&#34;mime_type-string-1&#34;&gt;mime_type (string)&lt;/h5&gt;
+&lt;p&gt;The mime_type of the file. For the manifest.mpd, this will be &amp;lsquo;application/dash+xml&amp;rsquo;. For the associated chunk .m4s
+files, this will be &amp;lsquo;video/iso.segment&amp;rsquo;. For the .m3u8 files, this will be &amp;lsquo;application/x-mpegURL&amp;rsquo;.&lt;/p&gt;
+&lt;h5 id=&#34;metadata-string-1&#34;&gt;metadata (string)&lt;/h5&gt;
+&lt;p&gt;This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&amp;rsquo;re using,
+to get the metadata object.&lt;/p&gt;
+&lt;h5 id=&#34;createdat-string-1&#34;&gt;createdAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was created.&lt;/p&gt;
+&lt;h5 id=&#34;updatedat-string-1&#34;&gt;updatedAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was last modified.&lt;/p&gt;
+&lt;h5 id=&#34;type-string-1&#34;&gt;type (string)&lt;/h5&gt;
+&lt;p&gt;The general type of the object to which the static-resource refers. For cached videos, this will be &amp;lsquo;video&amp;rsquo; regardless
+of the mime_type; the associated thumbnail will be of type &amp;lsquo;image&amp;rsquo;.&lt;/p&gt;
+&lt;h5 id=&#34;attributionid-string-1&#34;&gt;attributionId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the attribution of this video. Will be null if no &amp;lsquo;creator&amp;rsquo; was passed during creation.&lt;/p&gt;
+&lt;h5 id=&#34;userid-string-1&#34;&gt;userId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the User that owns this cached video. Will be null if it&amp;rsquo;s a public video.&lt;/p&gt;
+&lt;h5 id=&#34;parentresourceid-string-1&#34;&gt;parentResourceId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the parent static-resource represeting the manifest.mpd file for this cached video. Will be null for the
+manifest.mpd static-resource, as it is the &amp;lsquo;master&amp;rsquo; resource.&lt;/p&gt;
+&lt;h3 id=&#34;patch-cached-video&#34;&gt;Patch Cached Video&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;PATCH /static-resource/&amp;lt;UUID&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;As mentioned in &amp;lsquo;Resulting static-resources&amp;rsquo;, the database entries created from caching a video are all
+&amp;lsquo;static-resources&amp;rsquo;. You cannot do a PATCH on /video, but instead must interact with the API using the /static-resource
+endpoint.&lt;/p&gt;
+&lt;p&gt;To update specific fields on a static-resource, make a PATCH to /static-resource/&lt;the UUID of the resource&gt;. As this is
+a PATCH, you only need to include the fields you want to change. Updating a manifest.mpd resource will not propagate
+changes to any children of that resource, though since all information such as metadata, name, description,
+attribution, etc. should be read off of the &amp;lsquo;master&amp;rsquo; static-resource, there&amp;rsquo;s no need to update all of its children
+anyway.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE ON PATCHING METADATA&lt;/strong&gt;
+The metadata field is stored in SQL as a JSON field, meaning as stringified JSON. If you are patching a subfield in
+there, you should make sure to set every subfield that is remaining the same, as well.&lt;/p&gt;
+&lt;p&gt;If you wanted to change the thumbnail_url subfield in&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+    &amp;quot;metadata&amp;quot;: {
+       &amp;quot;thumbnail_url&amp;quot;: &amp;quot;https://some-url.com/image.jpg&amp;quot;,
+       &amp;quot;rating&amp;quot;: &amp;quot;All&amp;quot;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;you should send the following body&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+     &amp;quot;metadata&amp;quot;: {
+        &amp;quot;thumbnail_url&amp;quot;: &amp;quot;https://some-new-url.com/image.png&amp;quot;,
+        &amp;quot;rating&amp;quot;: &amp;quot;All&amp;quot;
+     }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and NOT&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+     &amp;quot;metadata&amp;quot;: {
+        &amp;quot;thumbnail_url&amp;quot;: &amp;quot;https://this-is-incorrect.com/image.png&amp;quot;
+     }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The latter would result in the loss of the &amp;lsquo;rating&amp;rsquo; subfield (and any other subfields that weren&amp;rsquo;t explicitly defined).&lt;/p&gt;
+&lt;h4 id=&#34;fields-3&#34;&gt;Fields&lt;/h4&gt;
+&lt;p&gt;The following static-resource fields will be returned:&lt;/p&gt;
+&lt;h5 id=&#34;id-string-2&#34;&gt;id (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the static-resource.&lt;/p&gt;
+&lt;h5 id=&#34;name-string-2&#34;&gt;name (string)&lt;/h5&gt;
+&lt;p&gt;The name of the video.&lt;/p&gt;
+&lt;h5 id=&#34;description-string-3&#34;&gt;description (string)&lt;/h5&gt;
+&lt;p&gt;A description of the video.&lt;/p&gt;
+&lt;h5 id=&#34;url-string-2&#34;&gt;url (string)&lt;/h5&gt;
+&lt;p&gt;The URL of the file in XREngine&amp;rsquo;s storage cache. This will NOT be the original URL of where the video was downloaded from.&lt;/p&gt;
+&lt;h5 id=&#34;mime_type-string-2&#34;&gt;mime_type (string)&lt;/h5&gt;
+&lt;p&gt;The mime_type of the file. For the manifest.mpd, this will be &amp;lsquo;application/dash+xml&amp;rsquo;. For the associated chunk .m4s
+files, this will be &amp;lsquo;video/iso.segment&amp;rsquo;. For the .m3u8 files, this will be &amp;lsquo;application/x-mpegURL&amp;rsquo;.&lt;/p&gt;
+&lt;h5 id=&#34;metadata-string-2&#34;&gt;metadata (string)&lt;/h5&gt;
+&lt;p&gt;This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&amp;rsquo;re using,
+to get the metadata object.&lt;/p&gt;
+&lt;h5 id=&#34;createdat-string-2&#34;&gt;createdAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was created.&lt;/p&gt;
+&lt;h5 id=&#34;updatedat-string-2&#34;&gt;updatedAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was last modified.&lt;/p&gt;
+&lt;h5 id=&#34;type-string-2&#34;&gt;type (string)&lt;/h5&gt;
+&lt;p&gt;The general type of the object to which the static-resource refers. For cached videos, this will be &amp;lsquo;video&amp;rsquo; regardless
+of the mime_type; the associated thumbnail will be of type &amp;lsquo;image&amp;rsquo;.&lt;/p&gt;
+&lt;h5 id=&#34;attributionid-string-2&#34;&gt;attributionId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the attribution of this video. Will be null if no &amp;lsquo;creator&amp;rsquo; was passed during creation.&lt;/p&gt;
+&lt;h5 id=&#34;userid-string-2&#34;&gt;userId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the User that owns this cached video. Will be null if it&amp;rsquo;s a public video.&lt;/p&gt;
+&lt;h5 id=&#34;parentresourceid-string-2&#34;&gt;parentResourceId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the parent static-resource representing the manifest.mpd file for this cached video. Will be null for the
+manifest.mpd static-resource, as it is the &amp;lsquo;master&amp;rsquo; resource.&lt;/p&gt;
+&lt;h3 id=&#34;put-cached-video&#34;&gt;PUT Cached Video&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;PUT /static-resource/&amp;lt;UUID&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;As mentioned in &amp;lsquo;Resulting static-resources&amp;rsquo;, the database entries created from caching a video are all
+&amp;lsquo;static-resources&amp;rsquo;. You cannot do a PUT on /video, but instead must interact with the API using the /static-resource
+endpoint.&lt;/p&gt;
+&lt;p&gt;To update the entirety of a static-resource, make a PUT to /static-resource/&lt;the UUID of the resource&gt;. Updating a
+manifest.mpd resource will not propagate changes to any children of that resource, though since all information such as
+metadata, name, description, attribution, etc. should be read off of the &amp;lsquo;master&amp;rsquo; static-resource, there&amp;rsquo;s no need to
+update all of its children anyway.&lt;/p&gt;
+&lt;h4 id=&#34;fields-4&#34;&gt;Fields&lt;/h4&gt;
+&lt;p&gt;The following static-resource fields will be returned:&lt;/p&gt;
+&lt;h5 id=&#34;id-string-3&#34;&gt;id (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the static-resource.&lt;/p&gt;
+&lt;h5 id=&#34;name-string-3&#34;&gt;name (string)&lt;/h5&gt;
+&lt;p&gt;The name of the video.&lt;/p&gt;
+&lt;h5 id=&#34;description-string-4&#34;&gt;description (string)&lt;/h5&gt;
+&lt;p&gt;A description of the video.&lt;/p&gt;
+&lt;h5 id=&#34;url-string-3&#34;&gt;url (string)&lt;/h5&gt;
+&lt;p&gt;The URL of the file in XREngine&amp;rsquo;s storage cache. This will NOT be the original URL of where the video was downloaded from.&lt;/p&gt;
+&lt;h5 id=&#34;mime_type-string-3&#34;&gt;mime_type (string)&lt;/h5&gt;
+&lt;p&gt;The mime_type of the file. For the manifest.mpd, this will be &amp;lsquo;application/dash+xml&amp;rsquo;. For the associated chunk .m4s
+files, this will be &amp;lsquo;video/iso.segment&amp;rsquo;. For the .m3u8 files, this will be &amp;lsquo;application/x-mpegURL&amp;rsquo;.&lt;/p&gt;
+&lt;h5 id=&#34;metadata-string-3&#34;&gt;metadata (string)&lt;/h5&gt;
+&lt;p&gt;This will be a stringified form of the JSON object. Run JSON.parse(), or the equivalent in the language you&amp;rsquo;re using,
+to get the metadata object.&lt;/p&gt;
+&lt;h5 id=&#34;createdat-string-3&#34;&gt;createdAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was created.&lt;/p&gt;
+&lt;h5 id=&#34;updatedat-string-3&#34;&gt;updatedAt (string)&lt;/h5&gt;
+&lt;p&gt;The datetime at which the static-resource was last modified.&lt;/p&gt;
+&lt;h5 id=&#34;type-string-3&#34;&gt;type (string)&lt;/h5&gt;
+&lt;p&gt;The general type of the object to which the static-resource refers. For cached videos, this will be &amp;lsquo;video&amp;rsquo; regardless
+of the mime_type; the associated thumbnail will be of type &amp;lsquo;image&amp;rsquo;.&lt;/p&gt;
+&lt;h5 id=&#34;attributionid-string-3&#34;&gt;attributionId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the attribution of this video. Will be null if no &amp;lsquo;creator&amp;rsquo; was passed during creation.&lt;/p&gt;
+&lt;h5 id=&#34;userid-string-3&#34;&gt;userId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the User that owns this cached video. Will be null if it&amp;rsquo;s a public video.&lt;/p&gt;
+&lt;h5 id=&#34;parentresourceid-string-3&#34;&gt;parentResourceId (string)&lt;/h5&gt;
+&lt;p&gt;The UUID of the parent static-resource representing the manifest.mpd file for this cached video. Will be null for the
+manifest.mpd static-resource, as it is the &amp;lsquo;master&amp;rsquo; resource.&lt;/p&gt;
+&lt;h3 id=&#34;delete-cached-videos&#34;&gt;Delete Cached Videos&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;DELETE /static-resource/&amp;lt;UUID&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;As mentioned in &amp;lsquo;Resulting static-resources&amp;rsquo;, the database entries created from caching a video are all
+&amp;lsquo;static-resources&amp;rsquo;. You cannot do a DELETE on /video, but instead must interact with the API using the /static-resource
+endpoint.&lt;/p&gt;
+&lt;p&gt;To delete a static-resource, make a DELETE to /static-resource/&lt;the UUID of the resource&gt;. All children of that
+resource will be deleted, as will the cached file referenced in the &amp;lsquo;url&amp;rsquo; field. This means that if you delete the
+&amp;lsquo;master&amp;rsquo; static-resource pointing to the manifest.mpd file, ALL of the associated .m4s and .m3u8 resources and stored
+files will be removed, as will the thumbnail. This is the proper way to remove a cached video from the system.&lt;/p&gt;
+&lt;p&gt;Since public videos all get uploaded to a standardized path instead of having unique UUIDs in the stored paths,
+if there are multiple database references to a single video, and one of those references is deleted, the remaining
+one will point to nonexistent files.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>/docs/12-deployment/deploy_on_eks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/12-deployment/deploy_on_eks/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;deploying-xrengine-platform-on-aws-eks&#34;&gt;Deploying XREngine Platform on AWS EKS&lt;/h1&gt;
+&lt;h2 id=&#34;connect-to-your-cluster&#34;&gt;Connect to your cluster&lt;/h2&gt;
+&lt;p&gt;First install AWS CLI, Helm and Kubectl&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# install Helm and Kubectl&lt;/span&gt;
+sudo snap install kubectl --classic
+sudo snap install helm --classic
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Install AWS CLI v2, for Windows and Mac users: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html&lt;/span&gt; 
+curl &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&amp;#34;&lt;/span&gt; -o &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;awscliv2.zip&amp;#34;&lt;/span&gt;
+unzip awscliv2.zip
+sudo ./aws/install 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now load your cluster config&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;aws eks --region &amp;lt;us-east-1&amp;gt; update-kubeconfig --name &amp;lt;cluster-name&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;prepare-your-cluster&#34;&gt;Prepare your cluster&lt;/h2&gt;
+&lt;h3 id=&#34;create-https-certificate&#34;&gt;Create HTTPs certificate&lt;/h3&gt;
+&lt;p&gt;Create a certificate if needed using UI or CLI for your domain with wildcard subdomains &lt;code&gt;*.domain.com&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;aws acm request-certificate &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;--domain-name *.domain.com &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;--validation-method DNS &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;--idempotency-token &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1234&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;--options &lt;span style=&#34;color:#000&#34;&gt;CertificateTransparencyLoggingPreference&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;DISABLED --output text&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then store the result CertificateArn into&lt;/p&gt;
+&lt;h3 id=&#34;create-load-balancer-and-ingress-controller&#34;&gt;Create Load Balancer and Ingress Controller&lt;/h3&gt;
+&lt;p&gt;You need Nginx-Ingress controller.
+&lt;strong&gt;Warning&lt;/strong&gt;: This step will spin up an ALB (Application Load Balancer), which will incure some cost.&lt;/p&gt;
+&lt;p&gt;Create a values file like this:
+An actual file exists at &lt;a href=&#34;/configs/nginx-ingress-aws-values.yml&#34;&gt;/configs/nginx-ingress-aws-values.yml&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# values for nginx-ingress on EKS using Classic ALP&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;rbac&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;create&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;controller&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;config&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;ssl-redirect&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Redirect Insecure traffic to Https&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;service&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;targetPorts&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;      &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;http&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;http&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;      &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;https&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;http&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# SSL termination at the load balancer&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;annotations&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;      &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;service.beta.kubernetes.io/aws-load-balancer-ssl-ports&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;443&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;      &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;service.beta.kubernetes.io/aws-load-balancer-ssl-cert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;lt;ACM Certificate ARN for SSL&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then install the nginx-ingress using the values file you created&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;helm install nginx --values configs/nginx-ingress-aws-values.yml stable/nginx-ingress
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>/docs/12-deployment/managing_remote_kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/12-deployment/managing_remote_kubernetes/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;cluster-management&#34;&gt;Cluster Management&lt;/h1&gt;
+&lt;h2 id=&#34;install-lens&#34;&gt;Install Lens&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;sudo snap install kontena-lens --classic&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>/docs/12-deployment/release-helm-chart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/12-deployment/release-helm-chart/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;create-new-chart-version&#34;&gt;Create New Chart Version&lt;/h2&gt;
+&lt;p&gt;To create a new version from the chart you will need to install chartpress via:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pip install chartpress
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;then run following commands:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git checkout master
+git tag 0.1.0
+chartpress --publish-chart
+git clean -xffd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;the branch can be any branch have the required chart features, the tag will be the chart tag you need.&lt;/p&gt;
+&lt;p&gt;Also checkout the branch &lt;strong&gt;gh-pages&lt;/strong&gt; for the jykell deployment&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

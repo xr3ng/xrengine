@@ -2,17 +2,17 @@
 [![Build Status](https://travis-ci.org/xrengine/xrengine.svg?branch=master)](https://travis-ci.org/xrengine/xrengine)
 # xrengine
 
-> Backend server for XRChat, built on Node + Feathers + Express + SQL
+> Backend server for XREngine, built on Node + Feathers + Express + SQL
 
 ## About
 
-XRChat is an end-to-end solution for hosting humans and non-humans in a virtual space. This project would literally not be possible without the community contributions of Mozilla Hubs, Janus VR, Avaer + Exokit, Mr Doob, Hayden James Lee and many others.
+XREngine is an end-to-end solution for hosting humans and non-humans in a virtual space. This project would literally not be possible without the community contributions of Mozilla Hubs, Janus VR, Avaer + Exokit, Mr Doob, Hayden James Lee and many others.
 
 Our goal is an easy-to-use, well documented, end-to-end Javascript (or Typescript) exprience that anyone with a little bit of Javascript and HTML knowledge can dig into, deploy and make meaningful modifications and contributions to. If you fit this category and you are struggling with any aspect of getting started, we want to hear fromm you so that this can be a better exprience.
 
-XRChat is a free, open source, MIT-licensed project. You are welcome to do anything you want with it. We hope that you use it to make something beautiful.
+XREngine is a free, open source, MIT-licensed project. You are welcome to do anything you want with it. We hope that you use it to make something beautiful.
 
-This is the server portion of XRChat. To deploy everything at once with Kubernetes or Docker Compose, check out the branches in xrengine-ops. Or you can start the server with NPM (check out scripts/start-db.sh to get the database runnning) run the xrengine-client client and everything should connect out of the box.
+This is the server portion of XREngine. To deploy everything at once with Kubernetes or Docker Compose, check out the branches in xrengine-ops. Or you can start the server with NPM (check out scripts/start-db.sh to get the database runnning) run the xrengine-client client and everything should connect out of the box.
 
 ## Getting Started
 
@@ -143,7 +143,7 @@ To do this, please run as following.
 For more information, please visit here
 https://github.com/douglas-treadwell/sequelize-cli-typescript
 =======
-## XRChat Docs
+## XREngine Docs
 
 ### Please visit xrengine.github.io to see docs
 
@@ -151,7 +151,7 @@ Uses Hugo
 https://gohugo.io/getting-started/quick-start/ 
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/xrengine/xrengine-docs
+git clone --recurse-submodules --depth 1 https://github.com/xr3ngine/xrengine-docs
 
 npm install
 

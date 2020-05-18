@@ -9,7 +9,7 @@ description: >
 
 ## Structure
 
-XRChat can host various types of files on a storage provider you control, such as an S3 bucket in AWS.
+XREngine can host various types of files on a storage provider you control, such as an S3 bucket in AWS.
 Directly uploading files like this, as opposed to going through one of the conversion endpoints, will not alter the
 file in any way.
 
@@ -83,7 +83,7 @@ The name of the file.
 A description of the file.
 
 ##### url (string)
-The URL of the file in XRChat's storage cache.
+The URL of the file in XREngine's storage cache.
 
 ##### mime_type (string)
 The mime_type of the file. 
@@ -174,7 +174,7 @@ The name of the file.
 A description of the file.
 
 ##### url (string)
-The URL of the file in XRChat's storage cache.
+The URL of the file in XREngine's storage cache.
 
 ##### mime_type (string)
 The mime_type of the file. 
@@ -230,7 +230,7 @@ The name of the file.
 A description of the file.
 
 ##### url (string)
-The URL of the file in XRChat's storage cache.
+The URL of the file in XREngine's storage cache.
 
 ##### mime_type (string)
 The mime_type of the file. 
