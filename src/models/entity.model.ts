@@ -1,4 +1,4 @@
-// @ts-ignore
+// @ts-expect-error
 import { Sequelize, DataTypes } from 'sequelize'
 import { Application } from '../declarations'
 

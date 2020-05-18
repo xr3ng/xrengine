@@ -2,12 +2,12 @@
 import util from 'util'
 import { exec } from 'child_process'
 import * as path from 'path'
-// @ts-ignore
+// @ts-expect-error
 import config from 'config'
-// @ts-ignore
+// @ts-expect-error
 import youtubedl from 'youtube-dl'
 import AWS from 'aws-sdk'
-// @ts-ignore
+// @ts-expect-error
 import S3BlobStore from 's3-blob-store'
 import { Application } from '../declarations'
 import StorageProvider from '../storage/storageprovider'
@@ -15,7 +15,7 @@ import createStaticResource from './create-static-resource'
 
 import fs from 'fs'
 import _ from 'lodash'
-// @ts-ignore
+// @ts-expect-error
 import appRootPath from 'app-root-path'
 import uploadThumbnailLinkHook from './upload-thumbnail-link'
 
@@ -228,9 +228,9 @@ export default async (context: any): Promise<void> => {
         const creationPromises = (bucketObjects as any).map(async (object: any) => {
           const key = object.Key
 
-          // @ts-ignore
+          // @ts-expect-error
           const extension = (key.match(extensionRegex) != null ? key.match(extensionRegex)[1] : 'application') as string
-          // @ts-ignore
+          // @ts-expect-error
           const mimetype = mimetypeDict[extension]
 
           localContext.data.url = s3.endpoint.href + path.join(s3BlobStore.bucket, key)
@@ -281,9 +281,9 @@ const uploadFile = async (localFilePath: string, fileId: string, localContext: a
           // eslint-disable-next-line @typescript-eslint/no-misused-promises, no-async-promise-executor
           promises.push(new Promise(async (resolve, reject) => {
             const content = await fs.promises.readFile(localFilePath + '/' + file)
-            // @ts-ignore
+            // @ts-expect-error
             const extension = (file.match(extensionRegex) != null ? file.match(extensionRegex)[1] : 'application')
-            // @ts-ignore
+            // @ts-expect-error
             const mimetype = mimetypeDict[extension]
 
             localContext.params.file = {

@@ -1,6 +1,6 @@
 import { Sequelize, DataTypes } from 'sequelize'
 import { Application } from '../declarations'
-// @ts-ignore
+// @ts-expect-error
 import GenerateRandomAnimalName from 'random-animal-name-generator'
 
 export default (app: Application): any => {

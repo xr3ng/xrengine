@@ -1,12 +1,13 @@
 {
   "name": "xrengine",
-  "description": "Everything you need to make a WebXR social MMO in a box.",
-  "version": "0.0.0",
-  "homepage": "",
-  "private": true,
+  "description": "An engine for multi-modal social MMOs",
+  "version": "0.0.2",
+  "homepage": "http://github.com/xr3ngine/xrengine",
+  "repository": "http://github.com/xr3ngine/xrengine",
+  "private": false,
   "main": "src",
   "keywords": [
-    "feathers"
+    "xrengine"
   ],
   "author": {
     "name": "xr3ngine",
@@ -23,6 +24,9 @@
     "node": "^12.0.0",
     "yarn": ">= 0.18.0"
   },
+  "bin": {
+    "xrengine": "(npm run dev) & (cd client && npm run dev 3000)"
+  }
   "scripts": {
     "postinstall": "(cd client && yarn install) & (cd docs && npm install)",
     "compile": "shx rm -rf lib/ && tsc",

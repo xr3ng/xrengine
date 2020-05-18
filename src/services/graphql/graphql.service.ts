@@ -2,7 +2,7 @@ import { ServiceAddons } from '@feathersjs/feathers'
 import { Application } from '../../declarations'
 import { Graphql } from './graphql.class'
 import { PubSub } from 'graphql-subscriptions'
-// @ts-ignore
+// @ts-expect-error
 import { generateModelTypes, generateApolloServer } from 'graphql-sequelize-generator'
 
 import { Sequelize } from 'sequelize'

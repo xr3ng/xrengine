@@ -1,8 +1,8 @@
 import { Sequelize } from 'sequelize'
 import { Application } from './declarations'
-// @ts-ignore
+// @ts-expect-error
 import seederConfig from './seeder-config'
-// @ts-ignore
+// @ts-expect-error
 import seeder from 'feathers-seeder'
 import { db } from './db-config'
 import { setTimeout } from 'timers'
@@ -26,7 +26,7 @@ export default (app: Application): void => {
     app.set('sequelizeSync',
       sequelize.sync({ force: forceRefresh })
         .then(() => {
-          // @ts-ignore
+          // @ts-expect-error
           app.configure(seeder(seederConfig)).seed().catch(err => {
             console.log(err)
           })
