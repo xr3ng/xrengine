@@ -24,19 +24,22 @@
     "yarn": ">= 0.18.0"
   },
   "scripts": {
-    "test": "yarn run lint && yarn run compile && yarn run mocha",
-    "lint": "node node_modules/.bin/eslint --ext .js,.ts src/ test/ --fix",
-    "dev": "ts-node-dev --no-notify src/",
-    "next": "next build ./client",
-    "dev-reinit-db": "NODE_ENV=dev FORCE_DB_REFRESH=true ts-node-dev --no-notify src/",
-    "dev-reinit-db-windows": "SET NODE_ENV=dev && SET FORCE_DB_REFRESH=true && ts-node-dev --no-notify src/",
-    "dev-generate-fakes": "NODE_ENV=dev env GENERATE_FAKES=true ts-node-dev --no-notify src/",
-    "start": "yarn run compile && node lib/",
-    "mocha": "NODE_ENV=test ts-mocha \"test/**/*.ts\" --recursive --exit",
+    "postinstall": "(cd client && yarn install)",
     "compile": "shx rm -rf lib/ && tsc",
+    "dev": "ts-node-dev --no-notify src/",
+    "dev-reinit-db": "NODE_ENV=dev FORCE_DB_REFRESH=true ts-node-dev --no-notify src/",
+    "dev-generate-fakes": "NODE_ENV=dev env GENERATE_FAKES=true ts-node-dev --no-notify src/",
+    "lint": "node node_modules/.bin/eslint --ext .js,.ts src/ test/ --fix",
+    "mocha": "NODE_ENV=test ts-mocha \"test/**/*.ts\" --recursive --exit",
+    "start": "yarn run compile && node lib/",
     "sync": "PERFORM_DRY_RUN=true FORCE_DB_REFRESH=true node lib/",
+    "test": "yarn run lint && yarn run compile && yarn run mocha",
     "precommit": "no-master-commits -b master,dev",
-    "dev-with-client": "(npm run start) & (cd client && npm run dev 3000)"
+    "compile-with-client": "(npm run compile) & (cd client && npm run start)",
+    "dev-with-client": "(npm run dev) & (cd client && npm run dev 3000)",
+    "lint-with-client": "(npm run lint) & (cd client && npm run lint)",
+    "start-with-client": "(npm run start) & (cd client && npm run start)",
+    "test-with-client": "(npm run test) & (cd client && npm run test)"
   },
   "standard": {
     "env": [
