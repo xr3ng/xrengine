@@ -28,7 +28,7 @@
     "xrengine": "./cli.mjs"
   },
   "scripts": {
-    "postinstall": "(cd client && yarn install) & (cd docs && npm install)",
+    "postinstall": "(cd client && yarn install) && (cd docs && npm install)",
     "compile": "shx rm -rf lib/ && tsc",
     "dev": "ts-node-dev --no-notify src/",
     "dev-db": "cd scripts && sudo bash ./start-db.sh",
