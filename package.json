@@ -1,7 +1,7 @@
 {
   "name": "xrengine",
   "description": "A free, open source, scalable social WebXR engine for everyone.",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "homepage": "http://github.com/xr3ngine/xrengine",
   "repository": "http://github.com/xr3ngine/xrengine",
   "private": false,
