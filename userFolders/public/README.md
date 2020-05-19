@@ -1,0 +1,1 @@
+This is where you can put small, commonly used static resources -- images, icons, thumbnails, JSON bits, whatever you need. As this is the public folder, anything in this folder will indeed be public, so be careful!
