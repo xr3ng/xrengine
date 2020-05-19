@@ -6,6 +6,7 @@
   "repository": "http://github.com/xr3ngine/xrengine",
   "private": false,
   "main": "src",
+  "type": "module",
   "keywords": [
     "xrengine"
   ],
